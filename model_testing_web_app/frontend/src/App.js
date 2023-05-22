@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Layout from './pages/layout';
 import { Homepage, AddAirbnb } from './pages';
+import Layout from './pages/layout';
 
 import './App.scss';
 
