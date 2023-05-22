@@ -39,7 +39,7 @@ function Navbar() {
           <li className={`app__flex p-text ${activePage === '' ? 'link-active' : ''}`} key='l-Homepage' onClick={() => updateActivePage()}>
             <Link to='/'>Homepage</Link>
           </li>
-          <li className={`app__flex p-text ${activePage === '' ? 'link-active' : ''}`} key='l-AddAirbnb' onClick={() => updateActivePage()}>
+          <li className={`app__flex p-text ${activePage === 'add-new' ? 'link-active' : ''}`} key='l-AddAirbnb' onClick={() => updateActivePage()}>
             <Link to='/add-new'>Add Airbnb</Link>
           </li>
         </ul>

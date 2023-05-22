@@ -4,11 +4,10 @@
 :root {
   --font-base: "Arimo", sans-serif;
 
-  --primary-color: #d665091a;
-  --secondary-color: #d66509;
+  --primary-color: #FF385C;
   --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
+  --lightGray-color: #f3f2f2;
+  --gray-color: #dbdbdd;
   --brown-color: #46364a;
   --white-color: #ffffff;
   --bg-dark: #23282c;
