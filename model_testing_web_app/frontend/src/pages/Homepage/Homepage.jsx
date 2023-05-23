@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import { images } from '../../constants';
-import { Popup } from '../../components'
+import { Popup } from '../../components';
+import { FaHouseUser, FaBed, FaBath, FaMoneyBill } from 'react-icons/fa';
 import './Homepage.scss';
 
 function Homepage() {
@@ -17,9 +18,8 @@ function Homepage() {
       axios.get('http://localhost:8000/api/get-airbnb')
       .then(function(response) {
         if (response.status === 200) {
-          const allAirbnb = response.data.airbnb;
-          console.log(response)
-          setAirbnbList(allAirbnb);
+          const data = JSON.parse(response.data.data);
+          setAirbnbList(data);
         } else {
           setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': response.data.message});
         }})
@@ -39,12 +39,30 @@ function Homepage() {
     return (
       <div>
         <div className='app_homepage app__container'>
-            <h1>Your <span className='app_homepage-title-primary-color'>AirBnb</span></h1>
+            <h1>Your <span className='app__homepage-title-primary-color'>AirBnb</span></h1>
             <div className='app__airbnb-list'>
-                {airbnbList !== undefined && airbnbList.length > 0 ? (airbnbList.map((item, index) => (
-                <div className='app__airbnb-card' key={index}>
-                    
-                </div>
+                {airbnbList && airbnbList.length > 0 ? (airbnbList.map((item, index) => (
+                  <div className='app__airbnb-card' key={index}>
+                      <div className='app__airbnb-left'>
+                        <img src={images.img1} alt={`img${index}`}></img>
+                      </div>
+                      <div className='app__airbnb-right'>
+                        <span className='app__airbnb-card-title'>{item.id + '. ' + item.name}</span>
+                        {item.address}
+                        <span>
+                          <FaHouseUser /> {item.accommodates}
+                        </span>
+                        <span>
+                          <FaBed /> {item.beds}
+                        </span>
+                        <span>
+                          <FaBath /> {item.bathrooms}
+                        </span>
+                        <span>
+                          <FaMoneyBill /> {item.price}$
+                        </span>
+                      </div>
+                  </div>
                 ))) : 'You have no AirBnb. Add one now!'}
             </div>
         </div>
