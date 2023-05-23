@@ -1,0 +1,102 @@
+.app__new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    hr {
+        width: 90%;
+        background-color: var(--black-color);
+    }
+}
+
+.app__new-form {
+    display: flex;
+    flex-direction: column;
+
+    button {
+        padding: 1rem;
+        border-radius: 6px;
+        border-color: var(--primary-color);
+        border-style: solid;
+        background-color: var(--white-color);
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        color: var(--primary-color);
+        transition: all 0.1s ease-in-out;
+        margin: 1rem 0;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: var(--white-color);
+            transition: all 0.1s ease-in-out;
+        }
+
+        &:hover {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+
+            a {
+                color: var(--secondary-color);
+                border-bottom-style: none
+            }
+        }
+    }
+}
+
+.app__new-form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 1.5rem;
+    font-family: var(--font-base);
+    gap: 1rem;
+
+    input {
+        width: 80%;
+        padding: 0.70rem;
+        border-radius: 20px;
+        border: solid 2px;
+        border-color: var(--primary-color);
+        background-color: var(--white-color);
+        color: var(--secondary-color);
+        font-family: var(--font-base);
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    span {
+        display: none;
+        color: var(--primary-color);
+    }
+
+    input:invalid[focused="true"] ~ span {
+        display: block;
+    }
+
+    textarea:invalid[focused="true"] ~ span {
+        display: block;
+    }
+}
+
+.app__new-form-inputs-checkboxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        color: var(--black-color);
+    }
+}
