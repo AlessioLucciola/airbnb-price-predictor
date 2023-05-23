@@ -12,13 +12,13 @@ function Homepage() {
     useEffect(() => {
         getAirbnbList()
     }, []);
-  
 
     const getAirbnbList = () => {
-      axios.get('')
+      axios.get('http://localhost:8000/api/get-airbnb')
       .then(function(response) {
         if (response.status === 200) {
           const allAirbnb = response.data.airbnb;
+          console.log(response)
           setAirbnbList(allAirbnb);
         } else {
           setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': response.data.message});
@@ -39,7 +39,7 @@ function Homepage() {
     return (
       <div>
         <div className='app_homepage app__container'>
-            <h1>Your <text className='app_homepage-title-primary-color'>AirBnb</text></h1>
+            <h1>Your <span className='app_homepage-title-primary-color'>AirBnb</span></h1>
             <div className='app__airbnb-list'>
                 {airbnbList !== undefined && airbnbList.length > 0 ? (airbnbList.map((item, index) => (
                 <div className='app__airbnb-card' key={index}>

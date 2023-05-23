@@ -30,6 +30,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CORS_ORIGIN_ALLOW_ALL=True
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+
 ASGI_APPLICATION = "airbnb.asgi.application"
 
 CORS_ALLOWED_ORIGINS = [
@@ -50,6 +54,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -57,7 +63,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "airbnb.urls"
@@ -90,10 +95,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     },
     'mysql': {
-        'DB_HOST': os.getenv('DB_HOST'),
-        'DB_USERNAME': os.getenv('DB_USERNAME'),
-        'DB_PASSWORD': os.getenv('DB_PASSWORD'),
-        'DB_NAME': os.getenv('DB_NAME')
+        'DB_HOST': 'mysql',
+        'DB_USERNAME': 'admin',
+        'DB_PASSWORD': 'admin',
+        'DB_NAME': 'db_airbnb'
     }
 }
 
