@@ -9,15 +9,10 @@
         width: 90%;
         background-color: var(--black-color);
     }
-}
-
-.app__new-form {
-    display: flex;
-    flex-direction: column;
 
     button {
         padding: 1rem;
-        border-radius: 6px;
+        border-radius: 20px;
         border-color: var(--primary-color);
         border-style: solid;
         background-color: var(--white-color);
@@ -47,6 +42,11 @@
     }
 }
 
+.app__new-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .app__new-form-inputs {
     display: flex;
     flex-direction: column;
@@ -72,9 +72,7 @@
     }
 }
 
-.app__new-form-inputs-checkboxes {
-    display:flex;
-    flex-direction: column;
+.app__new-form-inputs-amenities {
     justify-content: center;
     border: 2px solid;
     list-style-type: none;
@@ -88,11 +86,42 @@
 
     label {
         display: flex;
-        justify-content: right;
-        text-align: left;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
-        input {
-            margin: 1rem;
+    button {
+        padding: 0.5rem;
+        border-radius: 20px;
+        border-color: var(--primary-color);
+        border-style: solid;
+        font-weight: 200;
+        transition: all 0.1s ease-in-out;
+        margin: 0.1rem;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: var(--white-color);
+            transition: all 0.1s ease-in-out;
+        }
+
+        &:hover {
+            background-color: var(--primary-color);
+            color: var(--white-color);
         }
     }
+}
+
+.button-enabled {
+    button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    }
+}
+
+.button-disabled {
+    background-color: var(--white-color);
+    color: var(--primary-color);
 }

@@ -5,7 +5,7 @@ import { Popup } from '../../components';
 import './AddAirbnb.scss';
 
 function AddAirbnb() {
-  const [formValues, setFormValues] = useState({ name: '', address: '', children_friendly: false });
+  const [formValues, setFormValues] = useState({ name: '', address: '', children_friendly: false, pet_friendly: false, has_tv: false, has_bathtub: false, has_self_checkin: false, has_private_entrance: false, has_security_devices: false, has_laundry: false, has_patio: false, has_paid_parking: false, has_fireplace: false, is_long_term_stays_allowed: false, has_city_skyline_view: false, is_smoking_allowed: false, has_free_parking: false, has_heating_cooling_systems: false, has_elevator: false, has_cooking_basics: false, has_internet: false, has_breakfast: false, host_greets_you: false, accommodates: '', beds: '', bedrooms: '', n_bathrooms: '', is_bathroom_shared: false, availability_365: '', property_type: '', room_type: '', latitude: 0, longitude: 0, instant_bookable: false, city: ''});
   const [popup, setPopup] = useState({trigger: false, title: '', description: ''});
   const [loading, setLoading] = useState(true);
 
@@ -27,8 +27,166 @@ function AddAirbnb() {
       label: 'address',
       required: true,
       focused: false,
+    },
+    accommodates: {
+      id: 'i3',
+      name: 'accommodates',
+      type: 'number',
+      placeholder: 'Number of accommodates',
+      label: 'accommodates',
+      required: true,
+      focused: false,
+      min: 0
+    },
+    beds: {
+      id: 'i4',
+      name: 'beds',
+      type: 'number',
+      placeholder: 'Number of beds',
+      label: 'beds',
+      required: true,
+      focused: false,
+      min: 0
+    },
+    bedrooms: {
+      id: 'i5',
+      name: 'bedrooms',
+      type: 'number',
+      placeholder: 'Number of bedrooms',
+      label: 'bedrooms',
+      required: true,
+      focused: false,
+      min: 0
+    },
+    n_bathrooms: {
+      id: 'i6',
+      name: 'n_bathrooms',
+      type: 'number',
+      placeholder: 'Number of bathrooms',
+      label: 'n_bathrooms',
+      required: true,
+      focused: false,
+      min: 0
+    },
+    availability_365: {
+      id: 'i7',
+      name: 'availability_365',
+      type: 'text',
+      placeholder: 'Number of days your Airbnb is available (in a year)',
+      label: 'availability_365',
+      required: true,
+      focused: false,
+      min: 0,
+      max: 365
+    },
+    latitude: {
+      id: 'i8',
+      name: 'latitude',
+      type: 'number',
+      step:'any',
+      placeholder: 'Latitude of the Airbnb',
+      label: 'latitude',
+      required: true,
+      focused: false,
+    },
+    longitude: {
+      id: 'i9',
+      name: 'longitude',
+      step:'any',
+      type: 'number',
+      placeholder: 'Longitude of the Airbnb',
+      label: 'longitude',
+      required: true,
+      focused: false,
     }
   }
+
+  const amenities = [
+    {
+      name: 'children_friendly',
+      label: 'Children friendly'
+    },
+    {
+      name: 'pet_friendly',
+      label: 'Pet friendly'
+    },
+    {
+      name: 'has_tv',
+      label: 'Has tv'
+    },
+    {
+      name: 'has_bathtub',
+      label: 'Has bathtub'
+    },
+    {
+      name: 'has_self_checkin',
+      label: 'Has self-checkin'
+    },
+    {
+      name: 'has_private_entrance',
+      label: 'Has private entrance'
+    },
+    {
+      name: 'has_security_devices',
+      label: 'Has security devices'
+    },
+    {
+      name: 'has_laundry',
+      label: 'Has laundry'
+    },
+    {
+      name: 'has_patio',
+      label: 'Has patio'
+    },
+    {
+      name: 'has_paid_parking',
+      label: 'Paid parking nearby'
+    },
+    {
+      name: 'has_fireplace',
+      label: 'Has fireplace'
+    },
+    {
+      name: 'is_long_term_stays_allowed',
+      label: 'Long term stays allowed'
+    },
+    {
+      name: 'has_city_skyline_view',
+      label: 'Has city skylines view'
+    },
+    {
+      name: 'is_smoking_allowed',
+      label: 'Smocking allowed'
+    },
+    {
+      name: 'has_free_parking',
+      label: 'Free parking nearby'
+    },
+    {
+      name: 'has_heating_cooling_systems',
+      label: 'Has heating-cooling systems'
+    },
+    {
+      name: 'has_elevator',
+      label: 'Has elevator'
+    },
+    {
+      name: 'has_cooking_basics',
+      label: 'Has cooking basics'
+    },
+    {
+      name: 'has_internet',
+      label: 'Has internet'
+    },
+    {
+      name: 'has_breakfast',
+      label: 'Has breakfast'
+    },
+    {
+      name: 'host_greets_you',
+      label: 'Host greets you'
+    }
+  ]
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,7 +201,7 @@ function AddAirbnb() {
       captcha: formValues['captcha']
     }
     console.log(formValues)
-    setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': ''});
+
   }
 
   const onChange = (e) => {
@@ -56,6 +214,11 @@ function AddAirbnb() {
       ...prevState,
       [name]: checked
     }));
+  };
+
+  const onChangeAmenity = (e) => {
+    const { name } = e.target;
+    formValues[name] ? setFormValues({...formValues, [name]: false}) : setFormValues({...formValues, [name]: true})
   };
 
   const closePopup = () => {
@@ -71,92 +234,20 @@ function AddAirbnb() {
             Give me some general information on your Airbnb!
             <input {...inputs.name} value={formValues[inputs.name.name]} onChange={onChange} />
             <input {...inputs.address} value={formValues[inputs.address.name]} onChange={onChange} />
+            <input {...inputs.latitude} value={formValues[inputs.address.latitude]} onChange={onChange} />
+            <input {...inputs.longitude} value={formValues[inputs.address.longitude]} onChange={onChange} />
+            
+            <hr />
+            <input {...inputs.accommodates} value={formValues[inputs.address.accommodates]} onChange={onChange} />
+            <input {...inputs.beds} value={formValues[inputs.address.beds]} onChange={onChange} />
+            <input {...inputs.bedrooms} value={formValues[inputs.address.bedrooms]} onChange={onChange} />
+            <input {...inputs.n_bathrooms} value={formValues[inputs.address.n_bathrooms]} onChange={onChange} />
+            <hr />
             What are the amenities?
-            <div className='app__new-form-inputs-checkboxes'>
-              <label>
-                <input type="checkbox" id="children_friendly" name="children_friendly" checked={formValues.children_friendly} onChange={onChangeCheckbox}/>
-                <span>Children friendly</span>
-              </label>
-              <label>
-                <input type="checkbox" id="pet_friendly" name="pet_friendly" checked={formValues.pet_friendly} onChange={onChangeCheckbox}/>
-                <span>Pet friendly</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_tv" name="has_tv" checked={formValues.has_tv} onChange={onChangeCheckbox}/>
-                <span>Has TV</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_bathtub" name="has_bathtub" checked={formValues.has_bathtub} onChange={onChangeCheckbox}/>
-                <span>Has bathtub</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_self_checkin" name="has_self_checkin" checked={formValues.has_self_checkin} onChange={onChangeCheckbox}/>
-                <span>Has self-checkin</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_private_entrance" name="has_private_entrance" checked={formValues.has_private_entrance} onChange={onChangeCheckbox}/>
-                <span>Private entrance</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_security_devices" name="has_security_devices" checked={formValues.has_security_devices} onChange={onChangeCheckbox}/>
-                <span>Security devices</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_laundry" name="has_laundry" checked={formValues.has_laundry} onChange={onChangeCheckbox}/>
-                <span>Has laundry</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_patio" name="has_patio" checked={formValues.has_patio} onChange={onChangeCheckbox}/>
-                <span>Has patio</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_paid_parking" name="has_paid_parking" checked={formValues.has_paid_parking} onChange={onChangeCheckbox}/>
-                <span>Paid parking nearby</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_fireplace" name="has_fireplace" checked={formValues.has_fireplace} onChange={onChangeCheckbox}/>
-                <span>Has fireplace</span>
-              </label>
-              <label>
-                <input type="checkbox" id="is_long_term_stays_allowed" name="is_long_term_stays_allowed" checked={formValues.is_long_term_stays_allowed} onChange={onChangeCheckbox}/>
-                <span>Long term stays allowed</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_city_skyline_view" name="has_city_skyline_view" checked={formValues.has_city_skyline_view} onChange={onChangeCheckbox}/>
-                <span>City skyline view</span>
-              </label>
-              <label>
-                <input type="checkbox" id="is_smoking_allowed" name="is_smoking_allowed" checked={formValues.is_smoking_allowed} onChange={onChangeCheckbox}/>
-                <span>Smocking allowed</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_free_parking" name="has_free_parking" checked={formValues.has_free_parking} onChange={onChangeCheckbox}/>
-                <span>Free parking nearby</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_heating_cooling_systems" name="has_heating_cooling_systems" checked={formValues.has_heating_cooling_systems} onChange={onChangeCheckbox}/>
-                <span>Has cooling-heating system</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_elevator" name="has_elevator" checked={formValues.has_elevator} onChange={onChangeCheckbox}/>
-                <span>Has elevator</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_cooking_basics" name="has_cooking_basics" checked={formValues.has_cooking_basics} onChange={onChangeCheckbox}/>
-                <span>Has cooking basics</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_internet" name="has_internet" checked={formValues.has_internet} onChange={onChangeCheckbox}/>
-                <span>Has internet</span>
-              </label>
-              <label>
-                <input type="checkbox" id="has_breakfast" name="has_breakfast" checked={formValues.has_breakfast} onChange={onChangeCheckbox}/>
-                <span>Has breakfast</span>
-              </label>
-              <label>
-                <input type="checkbox" id="host_greets_you" name="host_greets_you" checked={formValues.host_greets_you} onChange={onChangeCheckbox}/>
-                <span>Host greets you</span>
-              </label>
+            <div className='app__new-form-inputs-amenities'>
+              {amenities.map((item, index) => (
+                  <button type='button' style={{color: formValues[item.name] ? 'var(--white-color)' : 'var(--primary-color)', backgroundColor: formValues[item.name] ? 'var(--primary-color)' : 'var(--white-color)' }} key={index} onClick={onChangeAmenity} name={item.name} value={formValues[item.name]}>{item.label}</button>
+              ))}
             </div>
           </div>
           <button type='submit'>
