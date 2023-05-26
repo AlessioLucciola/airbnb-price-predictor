@@ -3,11 +3,10 @@ import axios from 'axios';
 
 import { Popup } from '../../components';
 import './AddAirbnb.scss';
-import { m } from 'framer-motion';
 import { accommodationValues, hostInfo } from '../../constants';
 
 function AddAirbnb() {
-  const [formValues, setFormValues] = useState({ name: '', address: '', children_friendly: false, pet_friendly: false, has_tv: false, has_bathtub: false, has_self_checkin: false, has_private_entrance: false, has_security_devices: false, has_laundry: false, has_patio: false, has_paid_parking: false, has_fireplace: false, is_long_term_stays_allowed: false, has_city_skyline_view: false, is_smoking_allowed: false, has_free_parking: false, has_heating_cooling_systems: false, has_elevator: false, has_cooking_basics: false, has_internet: false, has_breakfast: false, host_greets_you: false, accommodates: '', beds: '', bedrooms: '', n_bathrooms: '', is_bathroom_shared: false, availability_365: '', property_type: '', room_type: '', latitude: 0, longitude: 0, instant_bookable: false, city: ''});
+  const [formValues, setFormValues] = useState({ name: '', address: '', children_friendly: 0, pet_friendly: 0, has_tv: 0, has_bathtub: 0, has_self_checkin: 0, has_private_entrance: 0, has_security_devices: 0, has_laundry: 0, has_patio: 0, has_paid_parking: 0, has_fireplace: 0, is_long_term_stays_allowed: 0, has_city_skyline_view: 0, is_smoking_allowed: 0, has_free_parking: 0, has_heating_cooling_systems: 0, has_elevator: 0, has_cooking_basics: 0, has_internet: 0, has_breakfast: 0, host_greets_you: 0, accommodates: 0, beds: 0, bedrooms: 0, n_bathrooms: 0, is_bathroom_shared: 0, availability_365: '', property_type: '', room_type: '', latitude: 0, longitude: 0, instant_bookable: 0, city: ''});
   const [popup, setPopup] = useState({trigger: false, title: '', description: ''});
   const [loading, setLoading] = useState(true);
 
@@ -226,57 +225,66 @@ function AddAirbnb() {
     e.preventDefault();
     setLoading(true);
     
-    let formData = {
-      name: formValues['name'],
-      address: formValues['address'],
-      children_friendly: formValues['address'],
-      pet_friendly: formValues['pet_friendly'],
-      has_tv: formValues['has_tv'],
-      has_bathtub: formValues['has_bathtub'],
-      has_self_checkin: formValues['has_self_checkin'],
-      has_private_entrance: formValues['has_private_entrance'],
-      has_security_devices: formValues['has_security_devices'],
-      has_laundry: formValues['has_laundry'],
-      has_patio: formValues['has_patio'],
-      has_paid_parking: formValues['has_paid_parking'],
-      has_fireplace: formValues['has_fireplace'],
-      is_long_term_stays_allowed: formValues['is_long_term_stays_allowed'],
-      has_city_skyline_view: formValues['is_long_term_stays_allowed'],
-      is_smoking_allowed: formValues['is_smoking_allowed'],
-      has_free_parking: formValues['has_free_parking'],
-      has_heating_cooling_systems: formValues['has_heating_cooling_systems'],
-      has_elevator: formValues['has_elevator'],
-      has_cooking_basics: formValues['has_cooking_basics'],
-      has_internet: formValues['has_internet'],
-      has_breakfast: formValues['has_breakfast'],
-      host_greets_you: formValues['host_greets_you'],
-      accommodates: formValues['accommodates'],
-      beds: formValues['beds'],
-      bedrooms: formValues['bedrooms'],
-      n_bathrooms: formValues['n_bathrooms'],
-      is_bathroom_shared: formValues['is_bathroom_shared'],
-      availability_365: formValues['availability_365'],
-      property_type: formValues['property_type'],
-      room_type: formValues['room_type'],
-      latitude: formValues['latitude'],
-      longitude: formValues['longitude'],
-      instant_bookable: formValues['instant_bookable'],
-      city: formValues['city'],
+    let formData = new FormData();
+    formData.append('name', formValues['name']);
+    formData.append('address', formValues['address']);
+    formData.append('children_friendly', formValues['address']);
+    formData.append('pet_friendly', formValues['pet_friendly']);
+    formData.append('has_tv', formValues['has_tv']);
+    formData.append('has_bathtub', formValues['has_bathtub']);
+    formData.append('has_self_checkin', formValues['has_self_checkin']);
+    formData.append('has_private_entrance', formValues['has_private_entrance']);
+    formData.append('has_security_devices', formValues['has_security_devices']);
+    formData.append('has_laundry', formValues['has_laundry']);
+    formData.append('has_patio', formValues['has_patio']);
+    formData.append('has_paid_parking', formValues['has_paid_parking']);
+    formData.append('has_fireplace', formValues['has_fireplace']);
+    formData.append('is_long_term_stays_allowed', formValues['is_long_term_stays_allowed']);
+    formData.append('has_city_skyline_view', formValues['is_long_term_stays_allowed']);
+    formData.append('is_smoking_allowed', formValues['is_smoking_allowed']);
+    formData.append('has_free_parking', formValues['has_free_parking']);
+    formData.append('has_heating_cooling_systems', formValues['has_heating_cooling_systems']);
+    formData.append('has_elevator', formValues['has_elevator']);
+    formData.append('has_cooking_basics', formValues['has_cooking_basics']);
+    formData.append('has_internet', formValues['has_internet']);
+    formData.append('has_breakfast', formValues['has_breakfast']);
+    formData.append('host_greets_you', formValues['host_greets_you']);
+    formData.append('accommodates', formValues['accommodates']);
+    formData.append('beds', formValues['beds']);
+    formData.append('bedrooms', formValues['bedrooms']);
+    formData.append('n_bathrooms', formValues['n_bathrooms']);
+    formData.append('is_bathroom_shared', formValues['is_bathroom_shared']);
+    formData.append('availability_365', formValues['availability_365']);
+    formData.append('property_type', formValues['property_type']);
+    formData.append('room_type', formValues['room_type']);
+    formData.append('latitude', formValues['latitude']);
+    formData.append('longitude', formValues['longitude']);
+    formData.append('instant_bookable', formValues['instant_bookable']);
+    formData.append('city', formValues['city']);
+    formData.append('is_work_email_verified', hostInfo.is_work_email_verified);
+    formData.append('host_identity_verified', hostInfo.host_identity_verified);
+    formData.append('host_is_superhost', hostInfo.host_is_superhost);
+    formData.append('host_response_time', hostInfo.host_response_time);
+    formData.append('is_phone_verified', hostInfo.is_phone_verified);
+    formData.append('is_email_verified', hostInfo.is_email_verified);
+    formData.append('review_scores_checkin', accommodationValues.review_scores_checkin);
+    formData.append('review_scores_communication', accommodationValues.review_scores_communication);
+    formData.append('number_of_reviews', accommodationValues.number_of_reviews);
+    formData.append('review_scores_cleanliness', accommodationValues.review_scores_cleanliness);
+    
+    axios.post("http://localhost:8000/api/generate-prediction", formData)
+				.then(function (response) {
+					if (response.status === 200) {
 
-      is_work_email_verified: hostInfo.is_work_email_verified,
-      host_identity_verified: hostInfo.host_identity_verified,
-      host_is_superhost: hostInfo.host_is_superhost,
-      host_response_time: hostInfo.host_response_time,
-      is_phone_verified: hostInfo.is_phone_verified,
-      is_email_verified: hostInfo.is_email_verified,
-
-      review_scores_checkin: accommodationValues.review_scores_checkin,
-      review_scores_communication: accommodationValues.review_scores_communication,
-      number_of_reviews: accommodationValues.number_of_reviews,
-      review_scores_cleanliness: accommodationValues.review_scores_cleanliness
-    }
-    console.log(formValues)
-
+            setLoading(false)
+					}
+				})
+				.catch(function (error) {
+					setPopup({ trigger: true, title: "An error occurred!", description: '' })
+          setLoading(false)
+				})
+    
+    setLoading(false)
   }
 
   const onChange = (e) => {
@@ -285,7 +293,7 @@ function AddAirbnb() {
 
   const onChangeAmenity = (e) => {
     const { name } = e.target;
-    formValues[name] ? setFormValues({...formValues, [name]: false}) : setFormValues({...formValues, [name]: true})
+    formValues[name] ? setFormValues({...formValues, [name]: 0}) : setFormValues({...formValues, [name]: 1})
   };
 
   const closePopup = () => {
