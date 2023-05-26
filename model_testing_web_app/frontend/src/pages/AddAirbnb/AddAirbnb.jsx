@@ -3,6 +3,8 @@ import axios from 'axios';
 
 import { Popup } from '../../components';
 import './AddAirbnb.scss';
+import { m } from 'framer-motion';
+import { accommodationValues, hostInfo } from '../../constants';
 
 function AddAirbnb() {
   const [formValues, setFormValues] = useState({ name: '', address: '', children_friendly: false, pet_friendly: false, has_tv: false, has_bathtub: false, has_self_checkin: false, has_private_entrance: false, has_security_devices: false, has_laundry: false, has_patio: false, has_paid_parking: false, has_fireplace: false, is_long_term_stays_allowed: false, has_city_skyline_view: false, is_smoking_allowed: false, has_free_parking: false, has_heating_cooling_systems: false, has_elevator: false, has_cooking_basics: false, has_internet: false, has_breakfast: false, host_greets_you: false, accommodates: '', beds: '', bedrooms: '', n_bathrooms: '', is_bathroom_shared: false, availability_365: '', property_type: '', room_type: '', latitude: 0, longitude: 0, instant_bookable: false, city: ''});
@@ -226,11 +228,52 @@ function AddAirbnb() {
     
     let formData = {
       name: formValues['name'],
-      surname: formValues['surname'],
-      email: formValues['email'],
-      phone: formValues['phone'],
-      request: formValues['request'],
-      captcha: formValues['captcha']
+      address: formValues['address'],
+      children_friendly: formValues['address'],
+      pet_friendly: formValues['pet_friendly'],
+      has_tv: formValues['has_tv'],
+      has_bathtub: formValues['has_bathtub'],
+      has_self_checkin: formValues['has_self_checkin'],
+      has_private_entrance: formValues['has_private_entrance'],
+      has_security_devices: formValues['has_security_devices'],
+      has_laundry: formValues['has_laundry'],
+      has_patio: formValues['has_patio'],
+      has_paid_parking: formValues['has_paid_parking'],
+      has_fireplace: formValues['has_fireplace'],
+      is_long_term_stays_allowed: formValues['is_long_term_stays_allowed'],
+      has_city_skyline_view: formValues['is_long_term_stays_allowed'],
+      is_smoking_allowed: formValues['is_smoking_allowed'],
+      has_free_parking: formValues['has_free_parking'],
+      has_heating_cooling_systems: formValues['has_heating_cooling_systems'],
+      has_elevator: formValues['has_elevator'],
+      has_cooking_basics: formValues['has_cooking_basics'],
+      has_internet: formValues['has_internet'],
+      has_breakfast: formValues['has_breakfast'],
+      host_greets_you: formValues['host_greets_you'],
+      accommodates: formValues['accommodates'],
+      beds: formValues['beds'],
+      bedrooms: formValues['bedrooms'],
+      n_bathrooms: formValues['n_bathrooms'],
+      is_bathroom_shared: formValues['is_bathroom_shared'],
+      availability_365: formValues['availability_365'],
+      property_type: formValues['property_type'],
+      room_type: formValues['room_type'],
+      latitude: formValues['latitude'],
+      longitude: formValues['longitude'],
+      instant_bookable: formValues['instant_bookable'],
+      city: formValues['city'],
+
+      is_work_email_verified: hostInfo.is_work_email_verified,
+      host_identity_verified: hostInfo.host_identity_verified,
+      host_is_superhost: hostInfo.host_is_superhost,
+      host_response_time: hostInfo.host_response_time,
+      is_phone_verified: hostInfo.is_phone_verified,
+      is_email_verified: hostInfo.is_email_verified,
+
+      review_scores_checkin: accommodationValues.review_scores_checkin,
+      review_scores_communication: accommodationValues.review_scores_communication,
+      number_of_reviews: accommodationValues.number_of_reviews,
+      review_scores_cleanliness: accommodationValues.review_scores_cleanliness
     }
     console.log(formValues)
 
@@ -238,14 +281,6 @@ function AddAirbnb() {
 
   const onChange = (e) => {
     setFormValues({...formValues, [e.target.name]: e.target.value})
-  };
-
-  const onChangeCheckbox = (e) => {
-    const { name, checked } = e.target;
-    setFormValues((prevState) => ({
-      ...prevState,
-      [name]: checked
-    }));
   };
 
   const onChangeAmenity = (e) => {

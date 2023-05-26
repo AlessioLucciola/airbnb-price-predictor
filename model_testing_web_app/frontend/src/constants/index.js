@@ -1,3 +1,5 @@
 import images from './images';
+import accommodationValues from './accommodationValues';
+import hostInfo from './hostValues';
 
-export { images };
+export { images, accommodationValues, hostInfo };
