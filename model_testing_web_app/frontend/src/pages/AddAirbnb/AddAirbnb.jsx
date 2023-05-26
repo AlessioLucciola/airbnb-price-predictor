@@ -5,7 +5,7 @@ import { Popup } from '../../components';
 import './AddAirbnb.scss';
 
 function AddAirbnb() {
-  const [formValues, setFormValues] = useState({ name: '', address: '' });
+  const [formValues, setFormValues] = useState({ name: '', address: '', children_friendly: false });
   const [popup, setPopup] = useState({trigger: false, title: '', description: ''});
   const [loading, setLoading] = useState(true);
 
@@ -42,37 +42,20 @@ function AddAirbnb() {
       request: formValues['request'],
       captcha: formValues['captcha']
     }
-
-    if (formValues.captcha === '') {
-      setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': 'Per continuare devi completare il ReCaptcha'});
-    } else {
-      axios.post('api/sendMail.php', formData)
-      .then(function (response) {
-          if (response.status === 200)
-          {
-            setPopup({'trigger': true, 'title': 'Richiesta Inviata!', 'description': response.data.message});
-            setLoading(false);
-            //removeValueFromFields();
-          } else if (response.status === 500) {
-            setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': response.data.message});
-            setLoading(false);
-          } else if (response.status === 401) {
-            setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': response.data.message});
-            setLoading(false);
-          } else {
-            setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': response.data.message});
-            setLoading(false);
-          }
-      })
-      .catch(function (error) {
-          setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': 'Si è verificato un errore interno al server. Contattaci telefonicamente per risolvere il problema.'});
-          setLoading(false);
-      });
-    }
+    console.log(formValues)
+    setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': ''});
   }
 
   const onChange = (e) => {
     setFormValues({...formValues, [e.target.name]: e.target.value})
+  };
+
+  const onChangeCheckbox = (e) => {
+    const { name, checked } = e.target;
+    setFormValues((prevState) => ({
+      ...prevState,
+      [name]: checked
+    }));
   };
 
   const closePopup = () => {
@@ -88,16 +71,92 @@ function AddAirbnb() {
             Give me some general information on your Airbnb!
             <input {...inputs.name} value={formValues[inputs.name.name]} onChange={onChange} />
             <input {...inputs.address} value={formValues[inputs.address.name]} onChange={onChange} />
-            What are your amenities?
+            What are the amenities?
             <div className='app__new-form-inputs-checkboxes'>
-              <span>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-                <label>Children friendly</label>
-              </span>
-              <span>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-                <label>Pet friendly</label>
-              </span>
+              <label>
+                <input type="checkbox" id="children_friendly" name="children_friendly" checked={formValues.children_friendly} onChange={onChangeCheckbox}/>
+                <span>Children friendly</span>
+              </label>
+              <label>
+                <input type="checkbox" id="pet_friendly" name="pet_friendly" checked={formValues.pet_friendly} onChange={onChangeCheckbox}/>
+                <span>Pet friendly</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_tv" name="has_tv" checked={formValues.has_tv} onChange={onChangeCheckbox}/>
+                <span>Has TV</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_bathtub" name="has_bathtub" checked={formValues.has_bathtub} onChange={onChangeCheckbox}/>
+                <span>Has bathtub</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_self_checkin" name="has_self_checkin" checked={formValues.has_self_checkin} onChange={onChangeCheckbox}/>
+                <span>Has self-checkin</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_private_entrance" name="has_private_entrance" checked={formValues.has_private_entrance} onChange={onChangeCheckbox}/>
+                <span>Private entrance</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_security_devices" name="has_security_devices" checked={formValues.has_security_devices} onChange={onChangeCheckbox}/>
+                <span>Security devices</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_laundry" name="has_laundry" checked={formValues.has_laundry} onChange={onChangeCheckbox}/>
+                <span>Has laundry</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_patio" name="has_patio" checked={formValues.has_patio} onChange={onChangeCheckbox}/>
+                <span>Has patio</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_paid_parking" name="has_paid_parking" checked={formValues.has_paid_parking} onChange={onChangeCheckbox}/>
+                <span>Paid parking nearby</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_fireplace" name="has_fireplace" checked={formValues.has_fireplace} onChange={onChangeCheckbox}/>
+                <span>Has fireplace</span>
+              </label>
+              <label>
+                <input type="checkbox" id="is_long_term_stays_allowed" name="is_long_term_stays_allowed" checked={formValues.is_long_term_stays_allowed} onChange={onChangeCheckbox}/>
+                <span>Long term stays allowed</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_city_skyline_view" name="has_city_skyline_view" checked={formValues.has_city_skyline_view} onChange={onChangeCheckbox}/>
+                <span>City skyline view</span>
+              </label>
+              <label>
+                <input type="checkbox" id="is_smoking_allowed" name="is_smoking_allowed" checked={formValues.is_smoking_allowed} onChange={onChangeCheckbox}/>
+                <span>Smocking allowed</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_free_parking" name="has_free_parking" checked={formValues.has_free_parking} onChange={onChangeCheckbox}/>
+                <span>Free parking nearby</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_heating_cooling_systems" name="has_heating_cooling_systems" checked={formValues.has_heating_cooling_systems} onChange={onChangeCheckbox}/>
+                <span>Has cooling-heating system</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_elevator" name="has_elevator" checked={formValues.has_elevator} onChange={onChangeCheckbox}/>
+                <span>Has elevator</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_cooking_basics" name="has_cooking_basics" checked={formValues.has_cooking_basics} onChange={onChangeCheckbox}/>
+                <span>Has cooking basics</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_internet" name="has_internet" checked={formValues.has_internet} onChange={onChangeCheckbox}/>
+                <span>Has internet</span>
+              </label>
+              <label>
+                <input type="checkbox" id="has_breakfast" name="has_breakfast" checked={formValues.has_breakfast} onChange={onChangeCheckbox}/>
+                <span>Has breakfast</span>
+              </label>
+              <label>
+                <input type="checkbox" id="host_greets_you" name="host_greets_you" checked={formValues.host_greets_you} onChange={onChangeCheckbox}/>
+                <span>Host greets you</span>
+              </label>
             </div>
           </div>
           <button type='submit'>

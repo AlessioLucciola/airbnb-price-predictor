@@ -17,23 +17,17 @@ function Homepage() {
     const getAirbnbList = () => {
       axios.get('http://localhost:8000/api/get-airbnb')
       .then(function(response) {
-        if (response.status === 200) {
+        if (response.data.status === 200) {
           const data = JSON.parse(response.data.data);
           setAirbnbList(data);
-        } else {
-          setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': response.data.message});
         }})
         .catch(function(error) {
-            setPopup({'trigger': true, 'title': 'Si è verificato un errore!', 'description': 'Si è verificato un errore con il server. Ti preghiamo di riprovare più tardi.'});
+            setPopup({'trigger': true, 'title': 'Error!', 'description': 'An error occurred while getting the list of Airbnb!'});
         })
     }
 
     const closePopup = () => {
         setPopup({...popup, 'trigger': false});
-    }
-  
-    const getImgPath = (item) => {
-        return images[item];
     }
 
     return (
