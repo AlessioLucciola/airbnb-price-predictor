@@ -23,7 +23,7 @@ function AddAirbnb() {
       id: 'i2',
       name: 'address',
       type: 'text',
-      placeholder: 'Address of the Airbnb',
+      placeholder: 'Address',
       label: 'address',
       required: true,
       focused: false,
@@ -84,7 +84,7 @@ function AddAirbnb() {
       name: 'latitude',
       type: 'number',
       step:'any',
-      placeholder: 'Latitude of the Airbnb',
+      placeholder: 'Latitude',
       label: 'latitude',
       required: true,
       focused: false,
@@ -94,7 +94,7 @@ function AddAirbnb() {
       name: 'longitude',
       step:'any',
       type: 'number',
-      placeholder: 'Longitude of the Airbnb',
+      placeholder: 'Longitude',
       label: 'longitude',
       required: true,
       focused: false,
@@ -188,6 +188,38 @@ function AddAirbnb() {
     }
   ]
 
+  const cities = [
+    'Amsterdam',
+    'Athens',
+    'Barcelona',
+    'Berlin',
+    'Brussels',
+    'Dublin',
+    'Lisboa',
+    'London',
+    'Lyon',
+    'Madrid',
+    'Milan',
+    'Munich',
+    'Paris',
+    'Rome',
+    'Vienna'
+  ]
+
+  const property_type = [
+    'Entire place',
+    'Private room',
+    'Shared room',
+    'Other'
+  ]
+
+  const room_type = [
+    'Shared room',
+    'Hotel room',
+    'Entire home/apt',
+    'Private room'
+  ]
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -231,17 +263,48 @@ function AddAirbnb() {
       <h1>Add a new <span className='app__homepage-title-primary-color'>AirBnb</span></h1>
         <form className='app__new-form' onSubmit={handleSubmit}>
           <div className='app__new-form-inputs'>
-            Give me some general information on your Airbnb!
+            Give us some general information on your Airbnb!
             <input {...inputs.name} value={formValues[inputs.name.name]} onChange={onChange} />
             <input {...inputs.address} value={formValues[inputs.address.name]} onChange={onChange} />
             <input {...inputs.latitude} value={formValues[inputs.address.latitude]} onChange={onChange} />
             <input {...inputs.longitude} value={formValues[inputs.address.longitude]} onChange={onChange} />
-            
+            <select name="city" id="city" onChange={onChange} required>
+              <option value="" disabled selected hidden>City</option>
+              {cities.map((item, index) => (
+                <option key={index} value={item}>{item}</option>
+              ))}
+            </select>
             <hr />
+            What does it offer?
             <input {...inputs.accommodates} value={formValues[inputs.address.accommodates]} onChange={onChange} />
             <input {...inputs.beds} value={formValues[inputs.address.beds]} onChange={onChange} />
             <input {...inputs.bedrooms} value={formValues[inputs.address.bedrooms]} onChange={onChange} />
             <input {...inputs.n_bathrooms} value={formValues[inputs.address.n_bathrooms]} onChange={onChange} />
+            <select name="is_bathroom_shared" id="is_bathroom_shared" onChange={onChange} required>
+              <option value="" disabled selected hidden>Are bathrooms shared?</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
+            <select name="property_type" id="property_type" onChange={onChange} required>
+              <option value="" disabled selected hidden>Property type</option>
+              {property_type.map((item, index) => (
+                <option key={index} value={item}>{item}</option>
+              ))}
+            </select>
+            <select name="room_type" id="room_type" onChange={onChange} required>
+              <option value="" disabled selected hidden>Room type</option>
+              {room_type.map((item, index) => (
+                <option key={index} value={item}>{item}</option>
+              ))}
+            </select>
+            <hr /> 
+            We need some information on the availability     
+            <input {...inputs.availability_365} value={formValues[inputs.address.availability_365]} onChange={onChange} />
+            <select name="instant_bookable" id="instant_bookable" onChange={onChange} required>
+              <option value="" disabled selected hidden>Is instant bookable?</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+            </select>
             <hr />
             What are the amenities?
             <div className='app__new-form-inputs-amenities'>
@@ -251,7 +314,7 @@ function AddAirbnb() {
             </div>
           </div>
           <button type='submit'>
-            {loading ? 'Add you Airbnb' : 'Request Sent..'}
+            {loading ? 'Add Airbnb' : 'Request Sent..'}
           </button>
         </form>
       </div>
