@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from airbnb.settings import MODEL
 from .utils.dbconnector import dbconnector as db
 from .utils.distances import get_distances as distance
+from .utils.indexer import indexer_solver
 import json
 import os
 import math
@@ -51,9 +52,11 @@ def generate_prediction(request, *args, **kargs):
         for key, value in req_data.items():
             input_data[key] = value
         distances = distance.get_distances(float(input_data['latitude']), float(input_data['longitude']), input_data['city'])
-        a = MODEL.make_price_prediction([0, 0, 0, 8, 1, 1, 3, 1, 0.978082192, 5, 4.2, 3.8, 4.4, 4.6, 4.6, 3.4, 1, 2, 1, 1, 0, 1.0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0.282868312, 2.269291047])
+        pred_list = [input_data['host_response_time'], input_data['host_is_superhost'], input_data['host_identity_verified'], indexer_solver.get_city(input_data['city']), indexer_solver.get_property(input_data['property_type']), indexer_solver.get_room(input_data['room_type']), input_data['accommodates'], input_data['bedrooms'], input_data['beds'], input_data['availability_365'], input_data['number_of_reviews'], 4.5, input_data['review_scores_cleanliness'], input_data['review_scores_checkin'], input_data['review_scores_communication'], 4.5, 4.5, input_data['instant_bookable'], 3, input_data['is_email_verified'], input_data['is_phone_verified'], input_data['is_work_email_verified'], input_data['n_bathrooms'], input_data['is_bathroom_shared'], input_data['has_internet'], input_data['pet_friendly'], input_data['children_friendly'], input_data['has_cooking_basics'], input_data['has_laundry'], input_data['has_heating_cooling_systems'], input_data['has_security_devices'], input_data['has_fireplace'], input_data['has_tv'], input_data['is_long_term_stays_allowed'], input_data['has_self_checkin'], input_data['has_private_entrance'], input_data['has_elevator'], input_data['host_greets_you'], input_data['has_free_parking'], input_data['has_paid_parking'], input_data['has_bathtub'], input_data['has_patio'], input_data['is_smoking_allowed'], input_data['has_city_skyline_view'], input_data['has_breakfast'], distances[0], distances[1]]
+        print(pred_list)
+        a = MODEL.make_price_prediction(pred_list)
         print(math.exp(a))
-        print(distances)
+        #print(distances)
     print(input_data)
 
     '''

@@ -246,7 +246,7 @@ function AddAirbnb() {
     let formData = new FormData();
     formData.append('name', formValues['name']);
     formData.append('address', formValues['address']);
-    formData.append('children_friendly', formValues['address']);
+    formData.append('children_friendly', formValues['children_friendly']);
     formData.append('pet_friendly', formValues['pet_friendly']);
     formData.append('has_tv', formValues['has_tv']);
     formData.append('has_bathtub', formValues['has_bathtub']);
