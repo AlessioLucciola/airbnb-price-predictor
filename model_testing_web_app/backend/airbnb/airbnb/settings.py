@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 import os
 import dotenv
 from pathlib import Path
+from api.utils.models.model_prediction import Models
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -30,9 +31,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-CORS_ORIGIN_ALLOW_ALL=True
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
+
+MODEL = Models()
 
 ASGI_APPLICATION = "airbnb.asgi.application"
 

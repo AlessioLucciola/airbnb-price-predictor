@@ -15,6 +15,10 @@ def main():
             "Please, create a .env where to put all db credentials (more info on Notion)"
         )
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "airbnb.settings")
+
+    """Spark model loading"""
+    
+
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
