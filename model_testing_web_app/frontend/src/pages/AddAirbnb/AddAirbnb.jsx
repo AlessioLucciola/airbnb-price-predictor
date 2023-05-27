@@ -6,9 +6,11 @@ import './AddAirbnb.scss';
 import { accommodationValues, hostInfo } from '../../constants';
 
 function AddAirbnb() {
-  const [formValues, setFormValues] = useState({ name: '', address: '', house_number: '', children_friendly: 0, pet_friendly: 0, has_tv: 0, has_bathtub: 0, has_self_checkin: 0, has_private_entrance: 0, has_security_devices: 0, has_laundry: 0, has_patio: 0, has_paid_parking: 0, has_fireplace: 0, is_long_term_stays_allowed: 0, has_city_skyline_view: 0, is_smoking_allowed: 0, has_free_parking: 0, has_heating_cooling_systems: 0, has_elevator: 0, has_cooking_basics: 0, has_internet: 0, has_breakfast: 0, host_greets_you: 0, accommodates: '', beds: '', bedrooms: '', n_bathrooms: '', is_bathroom_shared: 0, availability_365: '', property_type: '', room_type: '', latitude: '', longitude: '', instant_bookable: 0, city: ''});
+  const [formValues, setFormValues] = useState({ name: '', address: '', house_number: '', children_friendly: 0, pet_friendly: 0, has_tv: 0, has_bathtub: 0, has_self_checkin: 0, has_private_entrance: 0, has_security_devices: 0, has_laundry: 0, has_patio: 0, has_paid_parking: 0, has_fireplace: 0, is_long_term_stays_allowed: 0, has_city_skyline_view: 0, is_smoking_allowed: 0, has_free_parking: 0, has_heating_cooling_systems: 0, has_elevator: 0, has_cooking_basics: 0, has_internet: 0, has_breakfast: 0, host_greets_you: 0, accommodates: '', beds: '', bedrooms: '', n_bathrooms: '', is_bathroom_shared: 0, availability_365: '', property_type: '', room_type: '', latitude: '', longitude: '', instant_bookable: 0, city: '', price: ''});
   const [popup, setPopup] = useState({trigger: false, title: '', description: ''});
-  const [loading, setLoading] = useState(true);
+  const [predictionValues, setPredictionValues] = useState({price: '', review_location: '', review_rating: ''})
+  const [loading, setLoading] = useState(false);
+  const [detailPage, setDetailPage] = useState(false);
 
   const inputs = {
     name: {
@@ -98,6 +100,16 @@ function AddAirbnb() {
       placeholder: 'Longitude',
       label: 'longitude',
       required: true,
+    },
+    price: {
+      id: 'i10',
+      name: 'price',
+      step:'any',
+      type: 'number',
+      placeholder: 'Price',
+      label: 'price',
+      required: true,
+      min: 0
     }
   }
 
@@ -293,8 +305,10 @@ function AddAirbnb() {
     axios.post("http://localhost:8000/api/generate-prediction", formData)
     .then(function (response) {
       if (response.status === 200) {
-
+        const data = JSON.parse(response.data.data)
+        setPredictionValues({price: data.price, review_location: data.review_location, review_rating: data.review_rating})
         setLoading(false)
+        setDetailPage(true)
       }
     })
     .catch(function (error) {
@@ -318,10 +332,50 @@ function AddAirbnb() {
     setPopup({...popup, 'trigger': false});
   }
 
+  const selectLocationScoreText = (value) => {
+    if (value >= 4.5) return 'Your Airbnb is in an excellent location. '
+    else if (value >= 4) return 'Your Airbnb is in a good location. '
+    else if (value >= 3) return 'Your Airbnb is in an decent location. '
+    else return 'It looks like your Airbnb is in a bad location. '
+  }
+
+  const selectRatingScoreText = (value) => {
+    if (value >= 4.5) return 'Your Airbnb will probably get an excellent rating score. '
+    else if (value >= 4) return 'Your Airbnb will probably get a good rating score. '
+    else if (value >= 3) return 'Your Airbnb will probably get an average rating score. '
+    else return 'Your Airbnb will probably get a bad rating score. Consider making some improvements. '
+  }
+
   return (
     <div>
       <div className='app__new app__container'>
       <h1>Add a new <span className='app__homepage-title-primary-color'>AirBnb</span></h1>
+      {detailPage ? (
+        <form className='app__new-form' onSubmit={handleSubmit}>
+          <div className='app__new-form-inputs'>
+            Based on the information that you gave, the advised price for your Airbnb is:
+            <div className='app__new-form-prediction-values'>
+              €{predictionValues.price}
+            </div>
+            {selectLocationScoreText(predictionValues.review_location) + 'You should a get a location score of:'}
+            <div className='app__new-form-prediction-values'>
+              {predictionValues.review_location}/5
+            </div>
+            {selectRatingScoreText(predictionValues.review_rating) + 'You should a get a rating score of:'}
+            <div className='app__new-form-prediction-values'>
+            {predictionValues.review_rating}/5
+            </div>
+            Choose a price per night:
+            <input {...inputs.price} value={formValues[inputs.price.name]} onChange={onChange} />
+          </div>
+          <button type='submit'>
+            {loading ? 'Request Sent..' : 'Confirm Add Airbnb'}
+          </button>
+          <button type='button' onClick={() => setDetailPage(false)}>
+            Go Back
+          </button>
+        </form>
+      ) : (
         <form className='app__new-form' onSubmit={handleSubmit}>
           <div className='app__new-form-inputs'>
             Give us some general information on your Airbnb!
@@ -376,9 +430,10 @@ function AddAirbnb() {
             </div>
           </div>
           <button type='submit'>
-            {loading ? 'Add Airbnb' : 'Request Sent..'}
+            {loading ? 'Request Sent..' : 'Continue'}
           </button>
         </form>
+      )}
       </div>
 
       <Popup trigger={popup['trigger']} title={popup['title']} description={popup['description']} onClick={closePopup} />
