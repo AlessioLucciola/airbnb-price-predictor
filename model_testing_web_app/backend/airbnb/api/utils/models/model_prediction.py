@@ -11,7 +11,7 @@ import os
 
 class Models():
     def __init__(self):
-        self.spark_session = self.create_spark_session()
+        self.spark_context, self.spark_session = self.create_spark_session()
         self.price_prediction_model_path = os.path.join(MODELS_ROOT, 'price_model')
         self.price_score_prediction_model_path = ''
         self.price_prediction_model = self.load_price_prediction_model()
