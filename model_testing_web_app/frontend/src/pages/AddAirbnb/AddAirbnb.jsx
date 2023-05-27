@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import { Popup } from '../../components';
@@ -6,7 +6,7 @@ import './AddAirbnb.scss';
 import { accommodationValues, hostInfo } from '../../constants';
 
 function AddAirbnb() {
-  const [formValues, setFormValues] = useState({ name: '', address: '', children_friendly: 0, pet_friendly: 0, has_tv: 0, has_bathtub: 0, has_self_checkin: 0, has_private_entrance: 0, has_security_devices: 0, has_laundry: 0, has_patio: 0, has_paid_parking: 0, has_fireplace: 0, is_long_term_stays_allowed: 0, has_city_skyline_view: 0, is_smoking_allowed: 0, has_free_parking: 0, has_heating_cooling_systems: 0, has_elevator: 0, has_cooking_basics: 0, has_internet: 0, has_breakfast: 0, host_greets_you: 0, accommodates: 0, beds: 0, bedrooms: 0, n_bathrooms: 0, is_bathroom_shared: 0, availability_365: '', property_type: '', room_type: '', latitude: 0, longitude: 0, instant_bookable: 0, city: ''});
+  const [formValues, setFormValues] = useState({ name: '', address: '', house_number: '', children_friendly: 0, pet_friendly: 0, has_tv: 0, has_bathtub: 0, has_self_checkin: 0, has_private_entrance: 0, has_security_devices: 0, has_laundry: 0, has_patio: 0, has_paid_parking: 0, has_fireplace: 0, is_long_term_stays_allowed: 0, has_city_skyline_view: 0, is_smoking_allowed: 0, has_free_parking: 0, has_heating_cooling_systems: 0, has_elevator: 0, has_cooking_basics: 0, has_internet: 0, has_breakfast: 0, host_greets_you: 0, accommodates: '', beds: '', bedrooms: '', n_bathrooms: '', is_bathroom_shared: 0, availability_365: '', property_type: '', room_type: '', latitude: '', longitude: '', instant_bookable: 0, city: ''});
   const [popup, setPopup] = useState({trigger: false, title: '', description: ''});
   const [loading, setLoading] = useState(true);
 
@@ -18,16 +18,22 @@ function AddAirbnb() {
       placeholder: 'Name of the Airbnb',
       label: 'name',
       required: true,
-      focused: false,
     },
     address: {
-      id: 'i2',
+      id: 'i2_1',
       name: 'address',
       type: 'text',
       placeholder: 'Address',
       label: 'address',
       required: true,
-      focused: false,
+    },
+    house_number: {
+      id: 'i2_2',
+      name: 'house_number',
+      type: 'string',
+      placeholder: 'House number',
+      label: 'house_number',
+      required: true,
     },
     accommodates: {
       id: 'i3',
@@ -36,7 +42,6 @@ function AddAirbnb() {
       placeholder: 'Number of accommodates',
       label: 'accommodates',
       required: true,
-      focused: false,
       min: 0
     },
     beds: {
@@ -46,7 +51,6 @@ function AddAirbnb() {
       placeholder: 'Number of beds',
       label: 'beds',
       required: true,
-      focused: false,
       min: 0
     },
     bedrooms: {
@@ -56,7 +60,6 @@ function AddAirbnb() {
       placeholder: 'Number of bedrooms',
       label: 'bedrooms',
       required: true,
-      focused: false,
       min: 0
     },
     n_bathrooms: {
@@ -66,7 +69,6 @@ function AddAirbnb() {
       placeholder: 'Number of bathrooms',
       label: 'n_bathrooms',
       required: true,
-      focused: false,
       min: 0
     },
     availability_365: {
@@ -76,7 +78,6 @@ function AddAirbnb() {
       placeholder: 'Number of days your Airbnb is available (in a year)',
       label: 'availability_365',
       required: true,
-      focused: false,
       min: 0,
       max: 365
     },
@@ -88,7 +89,6 @@ function AddAirbnb() {
       placeholder: 'Latitude',
       label: 'latitude',
       required: true,
-      focused: false,
     },
     longitude: {
       id: 'i9',
@@ -98,7 +98,6 @@ function AddAirbnb() {
       placeholder: 'Longitude',
       label: 'longitude',
       required: true,
-      focused: false,
     }
   }
 
@@ -221,6 +220,25 @@ function AddAirbnb() {
     'Private room'
   ]
 
+  useEffect(() => {
+    if (formValues.address !== '' && formValues.city !== '' && formValues.house_number !== '' && (formValues.latitude === '' && formValues.longitude === '')) {
+      setTimeout(() => {
+        const address = formValues.address.replace(' ', '+')
+        let URL = `https://geocode.maps.co/search?street=${formValues.house_number}+${address}&city=${formValues.city}`
+        axios.get(URL)
+				.then(function (response) {
+					if (response.status === 200) {
+            if (response.data.length > 0) {
+              const lat = response.data[0].lat
+              const lon = response.data[0].lon
+              setFormValues({...formValues, latitude: lat, longitude: lon})
+            }
+					}
+				})
+      }, 1000)
+    }
+  }, [formValues])
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -273,16 +291,16 @@ function AddAirbnb() {
     formData.append('review_scores_cleanliness', accommodationValues.review_scores_cleanliness);
     
     axios.post("http://localhost:8000/api/generate-prediction", formData)
-				.then(function (response) {
-					if (response.status === 200) {
+    .then(function (response) {
+      if (response.status === 200) {
 
-            setLoading(false)
-					}
-				})
-				.catch(function (error) {
-					setPopup({ trigger: true, title: "An error occurred!", description: '' })
-          setLoading(false)
-				})
+        setLoading(false)
+      }
+    })
+    .catch(function (error) {
+      setPopup({ trigger: true, title: "An error occurred!", description: '' })
+      setLoading(false)
+    })
     
     setLoading(false)
   }
@@ -309,42 +327,43 @@ function AddAirbnb() {
             Give us some general information on your Airbnb!
             <input {...inputs.name} value={formValues[inputs.name.name]} onChange={onChange} />
             <input {...inputs.address} value={formValues[inputs.address.name]} onChange={onChange} />
-            <input {...inputs.latitude} value={formValues[inputs.address.latitude]} onChange={onChange} />
-            <input {...inputs.longitude} value={formValues[inputs.address.longitude]} onChange={onChange} />
-            <select name="city" id="city" onChange={onChange} required>
-              <option value="" disabled selected hidden>City</option>
+            <input {...inputs.house_number} value={formValues[inputs.house_number.name]} onChange={onChange} />
+            <select name="city" id="city" defaultValue="" onChange={onChange} required>
+              <option value="" disabled hidden>City</option>
               {cities.map((item, index) => (
                 <option key={index} value={item}>{item}</option>
               ))}
             </select>
+            <input {...inputs.latitude} value={formValues[inputs.latitude.name]} onChange={onChange} />
+            <input {...inputs.longitude} value={formValues[inputs.longitude.name]} onChange={onChange} />
             <hr />
             What does it offer?
-            <input {...inputs.accommodates} value={formValues[inputs.address.accommodates]} onChange={onChange} />
-            <input {...inputs.beds} value={formValues[inputs.address.beds]} onChange={onChange} />
-            <input {...inputs.bedrooms} value={formValues[inputs.address.bedrooms]} onChange={onChange} />
-            <input {...inputs.n_bathrooms} value={formValues[inputs.address.n_bathrooms]} onChange={onChange} />
-            <select name="is_bathroom_shared" id="is_bathroom_shared" onChange={onChange} required>
-              <option value="" disabled selected hidden>Are bathrooms shared?</option>
+            <input {...inputs.accommodates} value={formValues[inputs.accommodates.name]} onChange={onChange} />
+            <input {...inputs.beds} value={formValues[inputs.beds.name]} onChange={onChange} />
+            <input {...inputs.bedrooms} value={formValues[inputs.bedrooms.name]} onChange={onChange} />
+            <input {...inputs.n_bathrooms} value={formValues[inputs.n_bathrooms.name]} onChange={onChange} />
+            <select name="is_bathroom_shared" defaultValue="" id="is_bathroom_shared" onChange={onChange} required>
+              <option value="" disabled hidden>Are bathrooms shared?</option>
               <option value="1">Yes</option>
               <option value="0">No</option>
             </select>
-            <select name="property_type" id="property_type" onChange={onChange} required>
-              <option value="" disabled selected hidden>Property type</option>
+            <select name="property_type" defaultValue="" id="property_type" onChange={onChange} required>
+              <option value="" disabled hidden>Property type</option>
               {property_type.map((item, index) => (
                 <option key={index} value={item}>{item}</option>
               ))}
             </select>
-            <select name="room_type" id="room_type" onChange={onChange} required>
-              <option value="" disabled selected hidden>Room type</option>
+            <select name="room_type" defaultValue="" id="room_type" onChange={onChange} required>
+              <option value="" disabled hidden>Room type</option>
               {room_type.map((item, index) => (
                 <option key={index} value={item}>{item}</option>
               ))}
             </select>
             <hr /> 
             We need some information on the availability     
-            <input {...inputs.availability_365} value={formValues[inputs.address.availability_365]} onChange={onChange} />
-            <select name="instant_bookable" id="instant_bookable" onChange={onChange} required>
-              <option value="" disabled selected hidden>Is instant bookable?</option>
+            <input {...inputs.availability_365} value={formValues[inputs.availability_365.name]} onChange={onChange} />
+            <select name="instant_bookable" defaultValue="" id="instant_bookable" onChange={onChange} required>
+              <option value="" disabled hidden>Is instant bookable?</option>
               <option value="1">Yes</option>
               <option value="0">No</option>
             </select>
