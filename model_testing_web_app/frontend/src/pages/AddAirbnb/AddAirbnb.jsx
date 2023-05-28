@@ -393,19 +393,12 @@ function AddAirbnb() {
             <hr />
             What does it offer?
             <input {...inputs.accommodates} value={formValues[inputs.accommodates.name]} onChange={onChange} />
-            <input {...inputs.beds} value={formValues[inputs.beds.name]} onChange={onChange} />
             <input {...inputs.bedrooms} value={formValues[inputs.bedrooms.name]} onChange={onChange} />
             <input {...inputs.n_bathrooms} value={formValues[inputs.n_bathrooms.name]} onChange={onChange} />
             <select name="is_bathroom_shared" defaultValue="" id="is_bathroom_shared" onChange={onChange} required>
               <option value="" disabled hidden>Are bathrooms shared?</option>
               <option value="1">Yes</option>
               <option value="0">No</option>
-            </select>
-            <select name="property_type" defaultValue="" id="property_type" onChange={onChange} required>
-              <option value="" disabled hidden>Property type</option>
-              {property_type.map((item, index) => (
-                <option key={index} value={item}>{item}</option>
-              ))}
             </select>
             <select name="room_type" defaultValue="" id="room_type" onChange={onChange} required>
               <option value="" disabled hidden>Room type</option>
