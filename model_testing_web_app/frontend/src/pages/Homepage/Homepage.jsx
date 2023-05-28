@@ -17,8 +17,9 @@ function Homepage() {
     const getAirbnbList = () => {
       axios.get('http://localhost:8000/api/get-airbnb')
       .then(function(response) {
-        if (response.data.status === 200) {
+        if (response.status === 200) {
           const data = JSON.parse(response.data.data);
+          console.log(data)
           setAirbnbList(data);
         }})
         .catch(function(error) {
@@ -35,7 +36,7 @@ function Homepage() {
         <div className='app_homepage app__container'>
             <h1>Your <span className='app__homepage-title-primary-color'>AirBnb</span></h1>
             <div className='app__airbnb-list'>
-                {airbnbList && airbnbList.length > 0 ? (airbnbList.map((item, index) => (
+                {airbnbList.length > 0 ? (airbnbList.map((item, index) => (
                   <div className='app__airbnb-card' key={index}>
                       <div className='app__airbnb-left'>
                         <img src={images.img1} alt={`img${index}`}></img>

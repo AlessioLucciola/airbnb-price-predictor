@@ -218,13 +218,6 @@ function AddAirbnb() {
     'Vienna'
   ]
 
-  const property_type = [
-    'Entire place',
-    'Private room',
-    'Shared room',
-    'Other'
-  ]
-
   const room_type = [
     'Shared room',
     'Hotel room',
@@ -319,6 +312,72 @@ function AddAirbnb() {
     setLoading(false)
   }
 
+  const handleAddAirbnb = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    
+    let formData = new FormData();
+    formData.append('name', formValues['name']);
+    formData.append('address', formValues['address']);
+    formData.append('children_friendly', formValues['children_friendly']);
+    formData.append('pet_friendly', formValues['pet_friendly']);
+    formData.append('has_tv', formValues['has_tv']);
+    formData.append('has_bathtub', formValues['has_bathtub']);
+    formData.append('has_self_checkin', formValues['has_self_checkin']);
+    formData.append('has_private_entrance', formValues['has_private_entrance']);
+    formData.append('has_security_devices', formValues['has_security_devices']);
+    formData.append('has_laundry', formValues['has_laundry']);
+    formData.append('has_patio', formValues['has_patio']);
+    formData.append('has_paid_parking', formValues['has_paid_parking']);
+    formData.append('has_fireplace', formValues['has_fireplace']);
+    formData.append('is_long_term_stays_allowed', formValues['is_long_term_stays_allowed']);
+    formData.append('has_city_skyline_view', formValues['is_long_term_stays_allowed']);
+    formData.append('is_smoking_allowed', formValues['is_smoking_allowed']);
+    formData.append('has_free_parking', formValues['has_free_parking']);
+    formData.append('has_heating_cooling_systems', formValues['has_heating_cooling_systems']);
+    formData.append('has_elevator', formValues['has_elevator']);
+    formData.append('has_cooking_basics', formValues['has_cooking_basics']);
+    formData.append('has_internet', formValues['has_internet']);
+    formData.append('has_breakfast', formValues['has_breakfast']);
+    formData.append('host_greets_you', formValues['host_greets_you']);
+    formData.append('accommodates', formValues['accommodates']);
+    formData.append('beds', formValues['beds']);
+    formData.append('bedrooms', formValues['bedrooms']);
+    formData.append('n_bathrooms', formValues['n_bathrooms']);
+    formData.append('is_bathroom_shared', formValues['is_bathroom_shared']);
+    formData.append('availability_365', formValues['availability_365']);
+    formData.append('property_type', formValues['property_type']);
+    formData.append('room_type', formValues['room_type']);
+    formData.append('latitude', formValues['latitude']);
+    formData.append('longitude', formValues['longitude']);
+    formData.append('instant_bookable', formValues['instant_bookable']);
+    formData.append('city', formValues['city']);
+    formData.append('is_work_email_verified', hostInfo.is_work_email_verified);
+    formData.append('host_identity_verified', hostInfo.host_identity_verified);
+    formData.append('host_is_superhost', hostInfo.host_is_superhost);
+    formData.append('host_response_time', hostInfo.host_response_time);
+    formData.append('is_phone_verified', hostInfo.is_phone_verified);
+    formData.append('is_email_verified', hostInfo.is_email_verified);
+    formData.append('review_scores_checkin', accommodationValues.review_scores_checkin);
+    formData.append('review_scores_communication', accommodationValues.review_scores_communication);
+    formData.append('number_of_reviews', accommodationValues.number_of_reviews);
+    formData.append('review_scores_cleanliness', accommodationValues.review_scores_cleanliness);
+    formData.append('price', formValues.price);
+    
+    axios.post("http://localhost:8000/api/add-airbnb", formData)
+    .then(function (response) {
+      if (response.status === 200) {
+        setPopup({ trigger: true, title: "Airbnb added!", description: '' })
+      }
+    })
+    .catch(function (error) {
+      setPopup({ trigger: true, title: "An error occurred!", description: '' })
+      setLoading(false)
+    })
+    
+    setLoading(false)
+  }
+
   const onChange = (e) => {
     setFormValues({...formValues, [e.target.name]: e.target.value})
   };
@@ -351,7 +410,7 @@ function AddAirbnb() {
       <div className='app__new app__container'>
       <h1>Add a new <span className='app__homepage-title-primary-color'>AirBnb</span></h1>
       {detailPage ? (
-        <form className='app__new-form' onSubmit={handleSubmit}>
+        <form className='app__new-form' onSubmit={handleAddAirbnb}>
           <div className='app__new-form-inputs'>
             Based on the information that you gave, the advised price for your Airbnb is:
             <div className='app__new-form-prediction-values'>

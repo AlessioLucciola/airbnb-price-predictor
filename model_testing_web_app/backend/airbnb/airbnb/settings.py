@@ -98,7 +98,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     },
     'mysql': {
-        'DB_HOST': 'mysql',
+        'DB_HOST': 'localhost',
         'DB_USERNAME': 'admin',
         'DB_PASSWORD': 'admin',
         'DB_NAME': 'db_airbnb'
