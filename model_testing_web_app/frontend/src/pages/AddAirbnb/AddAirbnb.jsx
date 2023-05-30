@@ -288,6 +288,8 @@ function AddAirbnb() {
     formData.append('host_identity_verified', hostInfo.host_identity_verified);
     formData.append('host_is_superhost', hostInfo.host_is_superhost);
     formData.append('host_response_time', hostInfo.host_response_time);
+    formData.append('host_acceptance_rate', hostInfo.host_acceptance_rate);
+    formData.append('host_response_rate', hostInfo.host_response_rate);
     formData.append('is_phone_verified', hostInfo.is_phone_verified);
     formData.append('is_email_verified', hostInfo.is_email_verified);
     formData.append('review_scores_checkin', accommodationValues.review_scores_checkin);
@@ -300,13 +302,11 @@ function AddAirbnb() {
       if (response.status === 200) {
         const data = JSON.parse(response.data.data)
         setPredictionValues({price: data.price, review_location: data.review_location, review_rating: data.review_rating})
-        setLoading(false)
         setDetailPage(true)
       }
     })
     .catch(function (error) {
       setPopup({ trigger: true, title: "An error occurred!", description: '' })
-      setLoading(false)
     })
     
     setLoading(false)
