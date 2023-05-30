@@ -13,8 +13,11 @@ class Models():
     def __init__(self):
         self.spark_context, self.spark_session = self.create_spark_session()
         self.price_prediction_model_path = os.path.join(MODELS_ROOT, 'price_model')
-        self.price_score_prediction_model_path = ''
+        self.rating_score_prediction_model_path = os.path.join(MODELS_ROOT, 'rating_score_model')
+        self.location_score_prediction_model_path = os.path.join(MODELS_ROOT, 'location_score_model')
         self.price_prediction_model = self.load_price_prediction_model()
+        self.rating_score_prediction_model = self.load_rating_score_prediction_model()
+        self.location_score_prediction_model = self.load_location_score_prediction_model()
     
     def create_spark_session(self):
         conf = SparkConf().\
@@ -35,8 +38,28 @@ class Models():
         model = GBTRegressionModel.load(self.price_prediction_model_path)
         return model
     
+    def load_rating_score_prediction_model(self):
+        model = GBTRegressionModel.load(self.rating_score_prediction_model_path)
+        return model
+    
+    def load_location_score_prediction_model(self):
+        model = GBTRegressionModel.load(self.location_score_prediction_model_path)
+        return model
+    
     def make_price_prediction(self, data):
         data = self.spark_session.createDataFrame([(Vectors.dense(data),)], ["features"])
         predictions = self.price_prediction_model.transform(data)
+        prediction_result = predictions.select("prediction").head()[0]
+        return prediction_result
+
+    def make_rating_score_prediction(self, data):
+        data = self.spark_session.createDataFrame([(Vectors.dense(data),)], ["features"])
+        predictions = self.rating_score_prediction_model.transform(data)
+        prediction_result = predictions.select("prediction").head()[0]
+        return prediction_result
+    
+    def make_location_score_prediction(self, data):
+        data = self.spark_session.createDataFrame([(Vectors.dense(data),)], ["features"])
+        predictions = self.location_score_prediction_model.transform(data)
         prediction_result = predictions.select("prediction").head()[0]
         return prediction_result
