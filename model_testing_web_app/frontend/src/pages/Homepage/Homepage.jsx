@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { images } from '../../constants';
 import { Popup } from '../../components';
-import { FaHouseUser, FaBed, FaBath, FaMoneyBill } from 'react-icons/fa';
+import { FaHouseUser, FaBath, FaMoneyBill } from 'react-icons/fa';
 import './Homepage.scss';
 
 function Homepage() {

@@ -8,7 +8,7 @@ import { accommodationValues, hostInfo } from '../../constants';
 function AddAirbnb() {
   const [formValues, setFormValues] = useState({ name: '', address: '', house_number: '', children_friendly: 0, pet_friendly: 0, has_tv: 0, has_bathtub: 0, has_self_checkin: 0, has_private_entrance: 0, has_security_devices: 0, has_laundry: 0, has_patio: 0, has_paid_parking: 0, has_fireplace: 0, is_long_term_stays_allowed: 0, has_city_skyline_view: 0, is_smoking_allowed: 0, has_free_parking: 0, has_heating_cooling_systems: 0, has_elevator: 0, has_cooking_basics: 0, has_internet: 0, has_breakfast: 0, host_greets_you: 0, accommodates: '', beds: '', bedrooms: '', n_bathrooms: '', is_bathroom_shared: 0, availability_365: '', property_type: '', room_type: '', latitude: '', longitude: '', instant_bookable: 0, city: '', price: ''});
   const [popup, setPopup] = useState({trigger: false, title: '', description: ''});
-  const [predictionValues, setPredictionValues] = useState({price: '', review_location: '', review_rating: ''})
+  const [predictionValues, setPredictionValues] = useState({price_static: '', location_score: '', rating_score: '', price_dynamic: ''})
   const [loading, setLoading] = useState(false);
   const [detailPage, setDetailPage] = useState(false);
 
@@ -296,12 +296,14 @@ function AddAirbnb() {
     formData.append('review_scores_communication', accommodationValues.review_scores_communication);
     formData.append('number_of_reviews', accommodationValues.number_of_reviews);
     formData.append('review_scores_cleanliness', accommodationValues.review_scores_cleanliness);
+    formData.append('review_scores_rating', accommodationValues.review_scores_rating);
+    formData.append('review_scores_location', accommodationValues.review_scores_location);
     
     axios.post("http://localhost:8000/api/generate-prediction", formData)
     .then(function (response) {
       if (response.status === 200) {
         const data = JSON.parse(response.data.data)
-        setPredictionValues({price: data.price, review_location: data.review_location, review_rating: data.review_rating})
+        setPredictionValues({price_static: data.price_static, location_score: data.location_score, rating_score: data.rating_score, price_dynamic: data.price_dynamic})
         setDetailPage(true)
       }
     })
@@ -415,15 +417,18 @@ function AddAirbnb() {
           <div className='app__new-form-inputs'>
             Based on the information that you gave, the advised price for your Airbnb is:
             <div className='app__new-form-prediction-values'>
-              €{predictionValues.price}
+              €{predictionValues.price_static} (static)
             </div>
-            {selectLocationScoreText(predictionValues.review_location) + 'You should a get a location score of:'}
             <div className='app__new-form-prediction-values'>
-              {predictionValues.review_location}/5
+              €{predictionValues.price_dynamic} (dynamic)
             </div>
-            {selectRatingScoreText(predictionValues.review_rating) + 'You should a get a rating score of:'}
+            {selectLocationScoreText(predictionValues.location_score) + 'You should a get a location score of:'}
             <div className='app__new-form-prediction-values'>
-            {predictionValues.review_rating}/5
+              {predictionValues.location_score}/5
+            </div>
+            {selectRatingScoreText(predictionValues.rating_score) + 'You should a get a rating score of:'}
+            <div className='app__new-form-prediction-values'>
+            {predictionValues.rating_score}/5
             </div>
             Choose a price per night:
             <input {...inputs.price} value={formValues[inputs.price.name]} onChange={onChange} />
