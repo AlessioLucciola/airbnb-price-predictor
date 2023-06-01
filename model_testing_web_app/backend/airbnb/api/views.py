@@ -31,6 +31,40 @@ def get_airbnb(request, *args, **kargs):
             for el in ret:
                 airbnb_instance = {
                     "id": el[0],
+                    "accommodates": el[1],
+                    "bedrooms": el[2],
+                    "n_bathrooms": el[3],
+                    "is_children_friendly": el[4],
+                    "availability_365": el[5],
+                    "has_tv": el[6],
+                    "is_bathroom_shared": el[7],
+                    "room_type": el[8],
+                    "has_bathtub": el[9],
+                    "review_scores_rating": el[10],
+                    "has_self_checkin": el[11],
+                    "has_private_entrance": el[12],
+                    "has_security_devices": el[13],
+                    "has_patio": el[15],
+                    "is_smoking_allowed": el[16],
+                    "city_center_dist": el[17],
+                    "has_free_parking": el[18],
+                    "host_identity_verified": el[19],
+                    "station_dist": el[20],
+                    "review_scores_cleanliness": el[21],
+                    "host_is_superhost": el[22],
+                    "instant_bookable": el[23],
+                    "has_elevator": el[25],
+                    "review_scores_location": el[26],
+                    "has_cooking_basics": el[27],
+                    "review_scores_value": el[28],
+                    "review_scores_checkin": el[30],
+                    "review_scores_communication": el[31],
+                    "city": el[32],
+                    "name": el[33],
+                    "price": el[34],
+                    "address": el[35],
+                    "poi_dist": el[36],
+                    "house_number": el[37]
                 }
                 output_data.append(airbnb_instance)
             print(output_data)
@@ -71,7 +105,7 @@ def add_airbnb(request, *args, **kargs):
         conn = db.dbconnector()
         try:
             cursor = conn.cursor()
-            query = "INSERT INTO airbnb(id, accommodates, bedrooms, n_bathrooms, is_children_friendly, availability_365, has_tv, is_bathroom_shared , room_type, has_bathtub, review_scores_rating, has_self_checkin, has_private_entrance, has_security_devices, calculated_host_listings_count, has_patio, is_smoking_allowed, city_center_dist, has_free_parking, host_identity_verified, station_dist, review_scores_cleanliness, host_is_superhost, instant_bookable, host_response_time, has_elevator, review_scores_location, has_cooking_basics, review_scores_value, number_of_reviews, review_scores_checkin, review_scores_communication, city, name) VALUES (DEFAULT, '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')".format(input_data['accommodates'], input_data['bedrooms'], input_data['n_bathrooms'], input_data['children_friendly'], input_data['availability_365'], input_data['has_tv'], input_data['is_bathroom_shared'], indexer_solver.get_room(input_data['room_type']), input_data['has_bathtub'], 4.5, input_data['has_self_checkin'], input_data['has_private_entrance'], input_data['has_security_devices'], 3, input_data['has_patio'], input_data['is_smoking_allowed'], distances[1], input_data['has_free_parking'], input_data['host_identity_verified'], distances[0], input_data['review_scores_cleanliness'], input_data['host_is_superhost'], input_data['instant_bookable'], input_data['host_response_time'], input_data['has_elevator'], 4.5, input_data['has_cooking_basics'], 4.5, input_data['number_of_reviews'], input_data['review_scores_checkin'], 4.5, indexer_solver.get_city(input_data['city']), input_data['name'])
+            query = "INSERT INTO airbnb(id, accommodates, bedrooms, n_bathrooms, is_children_friendly, availability_365, has_tv, is_bathroom_shared , room_type, has_bathtub, review_scores_rating, has_self_checkin, has_private_entrance, has_security_devices, calculated_host_listings_count, has_patio, is_smoking_allowed, city_center_dist, has_free_parking, host_identity_verified, station_dist, review_scores_cleanliness, host_is_superhost, instant_bookable, host_response_time, has_elevator, review_scores_location, has_cooking_basics, review_scores_value, number_of_reviews, review_scores_checkin, review_scores_communication, city, name, price, address, poi_dist, house_number) VALUES (DEFAULT, '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}', '{}')".format(input_data['accommodates'], input_data['bedrooms'], input_data['n_bathrooms'], input_data['children_friendly'], input_data['availability_365'], input_data['has_tv'], input_data['is_bathroom_shared'], indexer_solver.get_room(input_data['room_type']), input_data['has_bathtub'], 4.5, input_data['has_self_checkin'], input_data['has_private_entrance'], input_data['has_security_devices'], 3, input_data['has_patio'], input_data['is_smoking_allowed'], distances[1], input_data['has_free_parking'], input_data['host_identity_verified'], distances[0], input_data['review_scores_cleanliness'], input_data['host_is_superhost'], input_data['instant_bookable'], input_data['host_response_time'], input_data['has_elevator'], 4.5, input_data['has_cooking_basics'], 4.5, input_data['number_of_reviews'], input_data['review_scores_checkin'], 4.5, indexer_solver.get_city(input_data['city']), input_data['name'], input_data['price'], input_data['address'], distances[2], input_data['house_number'])
             cursor.execute(query)
             conn.commit()
             return JsonResponse({"message": "OK"}, status=200) 

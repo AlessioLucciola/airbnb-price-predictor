@@ -12,6 +12,10 @@ def get_station_distance_file():
     with open(os.path.join(DISTANCES_ROOT, 'transport_result.json'), 'r', encoding='utf16') as file:
         return json.loads(file.read())
 
+def get_poi_distance_file():
+    with open(os.path.join(DISTANCES_ROOT, 'poi_coordinates.json'), 'r') as file:
+        return json.loads(file.read())
+
 def haversine(lon1, lat1, lon2, lat2):
     lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
     dlon = lon2 - lon1 
@@ -34,5 +38,13 @@ def compute_station_distance(lat, lon, city):
         if min_distance == None or dist < min_distance: min_distance = dist
     return min_distance
 
+def compute_poi_distance(lat, lon, city):
+    min_distance = None
+    pois = get_poi_distance_file()
+    for coordinates in pois[city]:
+        dist = haversine(lon, lat, coordinates['lon'], coordinates['lat'])
+        if min_distance == None or dist < min_distance: min_distance = dist
+    return min_distance
+
 def get_distances(lat, lon, city):
-    return compute_station_distance(lat, lon, city), compute_city_distance(lat, lon, city)
+    return compute_station_distance(lat, lon, city), compute_city_distance(lat, lon, city), compute_poi_distance(lat, lon, city)

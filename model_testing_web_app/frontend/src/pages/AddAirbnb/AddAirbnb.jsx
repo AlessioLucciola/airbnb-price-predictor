@@ -363,6 +363,7 @@ function AddAirbnb() {
     formData.append('number_of_reviews', accommodationValues.number_of_reviews);
     formData.append('review_scores_cleanliness', accommodationValues.review_scores_cleanliness);
     formData.append('price', formValues.price);
+    formData.append('house_number', formValues.house_number);
     
     axios.post("http://localhost:8000/api/add-airbnb", formData)
     .then(function (response) {

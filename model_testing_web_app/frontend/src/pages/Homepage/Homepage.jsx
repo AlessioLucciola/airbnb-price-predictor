@@ -43,15 +43,12 @@ function Homepage() {
                       </div>
                       <div className='app__airbnb-right'>
                         <span className='app__airbnb-card-title'>{item.id + '. ' + item.name}</span>
-                        {item.address}
+                        {item.address + ', ' + item.house_number}
                         <span>
                           <FaHouseUser /> {item.accommodates}
                         </span>
                         <span>
-                          <FaBed /> {item.beds}
-                        </span>
-                        <span>
-                          <FaBath /> {item.bathrooms}
+                          <FaBath /> {item.n_bathrooms}
                         </span>
                         <span>
                           <FaMoneyBill /> {item.price}$
