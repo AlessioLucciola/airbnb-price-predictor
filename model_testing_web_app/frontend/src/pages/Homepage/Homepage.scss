@@ -10,16 +10,15 @@
 
 .app__airbnb-list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 80%;
+    align-content: flex-start;
+    gap: 1rem;
 }
 
 .app__airbnb-card {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    gap: 1rem;
 }
 
 .app__airbnb-card-title {
@@ -29,23 +28,20 @@
 
 .app__airbnb-left {
     img {
-        width: 300px;
+        width: 80%;
         border-radius: 2rem;
-
-        @media screen and (max-width: 1000px) {
-            width: 200px;
-        }
     }
 }
 
 .app__airbnb-right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: 60%;
+    gap: 0.8rem;
     font-size: medium;
 
     @media screen and (max-width: 1000px) {
-        gap: 2px;
+        gap: 0.5rem;
     }
 
     span {

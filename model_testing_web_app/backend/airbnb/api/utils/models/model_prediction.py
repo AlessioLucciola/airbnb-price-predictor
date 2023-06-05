@@ -26,7 +26,7 @@ class Models():
                 set('spark.driver.memory', '45G').\
                 set('spark.driver.maxResultSize', '10G').\
                 set('spark.executor.extraJavaOptions', '-XX:+UseG1GC').\
-                setAppName('PySparkTutorial').\
+                setAppName('Airbnb Price Prediction').\
                 setMaster('local[*]')
 
     # Create the context

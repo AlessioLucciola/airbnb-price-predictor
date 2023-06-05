@@ -1,6 +1,6 @@
 rooms = {'Entire home/apt': 0, 'Private room': 1, 'Hotel room': 2, 'Shared room': 3}
 properties = {'Entire place': 0, 'Private room': 1, 'Shared room': 2, 'Other': 3}
-cities = {'Madrid': 0, 'Dublin': 1, 'Berlin': 2, 'London': 3, 'Paris': 4, 'Athens': 5, 'Lyon': 6, 'Milan': 7, 'Barcelona': 8, 'Amsterdam': 9, 'Brussels': 10, 'Lisboa': 11, 'Munich': 12, 'Vienna': 13, 'Rome': 14}
+cities = {'Madrid': 3, 'Dublin': 11, 'Berlin': 8, 'London': 0, 'Paris': 1, 'Athens': 9, 'Lyon': 10, 'Milan': 4, 'Barcelona': 5, 'Amsterdam': 12, 'Brussels': 13, 'Lisboa': 6, 'Munich': 14, 'Vienna': 7, 'Rome': 2}
 
 def get_city(city):
     return cities[city]

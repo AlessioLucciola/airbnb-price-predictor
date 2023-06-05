@@ -3,8 +3,10 @@ import axios from 'axios';
 
 import { images } from '../../constants';
 import { Popup } from '../../components';
-import { FaHouseUser, FaBath, FaMoneyBill } from 'react-icons/fa';
+import { FaHouseUser, FaBath, FaMoneyBill, FaCity, FaBinoculars } from 'react-icons/fa';
+import { BiTrain } from 'react-icons/bi';
 import './Homepage.scss';
+import { solveCityIndexer } from '../../utils/solveCityIndexer';
 
 function Homepage() {
     const [airbnbList, setAirbnbList] = useState([]);
@@ -39,11 +41,11 @@ function Homepage() {
                 {airbnbList.length > 0 ? (airbnbList.map((item, index) => (
                   <div className='app__airbnb-card' key={index}>
                       <div className='app__airbnb-left'>
-                        <img src={images.img1} alt={`img${index}`}></img>
+                        <img src={images[`img${index+1%5}`]} alt={`img${index}`}></img>
                       </div>
                       <div className='app__airbnb-right'>
                         <span className='app__airbnb-card-title'>{item.id + '. ' + item.name}</span>
-                        {item.address + ', ' + item.house_number}
+                        {item.address + ' ' + item.house_number + ', ' + solveCityIndexer(item.city)}
                         <span>
                           <FaHouseUser /> {item.accommodates}
                         </span>
@@ -51,7 +53,16 @@ function Homepage() {
                           <FaBath /> {item.n_bathrooms}
                         </span>
                         <span>
-                          <FaMoneyBill /> {item.price}$
+                          <FaMoneyBill /> {item.price}$/night
+                        </span>
+                        <span>
+                          <FaBinoculars /> {item.poi_dist.toFixed(2)} km
+                        </span>
+                        <span>
+                          <FaCity /> {item.city_center_dist.toFixed(2)} km
+                        </span>
+                        <span>
+                          <BiTrain /> {item.station_dist.toFixed(2)} km
                         </span>
                       </div>
                   </div>

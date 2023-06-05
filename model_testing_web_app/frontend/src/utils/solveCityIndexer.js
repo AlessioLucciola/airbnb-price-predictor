@@ -1,0 +1,18 @@
+export const solveCityIndexer = (city) => {
+    if (city === 0) return 'London (UK)'
+    else if (city === 1) return 'Paris (France)'
+    else if (city === 2) return 'Rome (Italy)'
+    else if (city === 3) return 'Madrid (Spain)'
+    else if (city === 4) return 'Milan (Italy)'
+    else if (city === 5) return 'Barcelona (Spain)'
+    else if (city === 6) return 'Lisbon (Portugal)'
+    else if (city === 7) return 'Vienna (Austria)'
+    else if (city === 8) return 'Berlin (Germany)'
+    else if (city === 9) return 'Athens (Greece)'
+    else if (city === 10) return 'Lyon (France)'
+    else if (city === 11) return 'Dublin (Ireland)'
+    else if (city === 12) return 'Amsterdam (Netherland)'
+    else if (city === 13) return 'Brussels (Belgium)'
+    else if (city === 14) return 'Munich (Germany)'
+    else return ''
+}

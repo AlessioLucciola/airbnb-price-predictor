@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 
-import { Popup } from '../../components';
 import './AddAirbnb.scss';
+import { Popup } from '../../components';
 import { accommodationValues, hostInfo } from '../../constants';
 
 function AddAirbnb() {
-  const [formValues, setFormValues] = useState({ name: '', address: '', house_number: '', children_friendly: 0, pet_friendly: 0, has_tv: 0, has_bathtub: 0, has_self_checkin: 0, has_private_entrance: 0, has_security_devices: 0, has_laundry: 0, has_patio: 0, has_paid_parking: 0, has_fireplace: 0, is_long_term_stays_allowed: 0, has_city_skyline_view: 0, is_smoking_allowed: 0, has_free_parking: 0, has_heating_cooling_systems: 0, has_elevator: 0, has_cooking_basics: 0, has_internet: 0, has_breakfast: 0, host_greets_you: 0, accommodates: '', beds: '', bedrooms: '', n_bathrooms: '', is_bathroom_shared: 0, availability_365: '', property_type: '', room_type: '', latitude: '', longitude: '', instant_bookable: 0, city: '', price: ''});
+  const [formValues, setFormValues] = useState({ name: '', address: '', house_number: '', children_friendly: 0, pet_friendly: 0, has_tv: 0, has_bathtub: 0, has_self_checkin: 0, has_private_entrance: 0, has_security_devices: 0, has_laundry: 0, has_patio: 0, has_paid_parking: 0, has_fireplace: 0, is_long_term_stays_allowed: 0, has_city_skyline_view: 0, is_smoking_allowed: 0, has_free_parking: 0, has_heating_cooling_systems: 0, has_elevator: 0, has_cooking_basics: 0, has_internet: 0, has_breakfast: 0, host_greets_you: 0, accommodates: '', beds: '', bedrooms: '', n_bathrooms: '', is_bathroom_shared: 0, availability_365: '', property_type: '', room_type: '', latitude: '', longitude: '', instant_bookable: 0, city: '', price: '', minimum_nights: ''});
   const [popup, setPopup] = useState({trigger: false, title: '', description: ''});
   const [predictionValues, setPredictionValues] = useState({price_static: '', location_score: '', rating_score: '', price_dynamic: ''})
   const [loading, setLoading] = useState(false);
   const [detailPage, setDetailPage] = useState(false);
+
+  const navigate = useNavigate();
 
   const inputs = {
     name: {
@@ -110,6 +113,15 @@ function AddAirbnb() {
       label: 'price',
       required: true,
       min: 0
+    },
+    minimum_nights: {
+      id: 'i11',
+      name: 'minimum_nights',
+      type: 'number',
+      placeholder: 'Minimum nights',
+      label: 'minimum_nights',
+      required: true,
+      min: 1
     }
   }
 
@@ -298,6 +310,7 @@ function AddAirbnb() {
     formData.append('review_scores_cleanliness', accommodationValues.review_scores_cleanliness);
     formData.append('review_scores_rating', accommodationValues.review_scores_rating);
     formData.append('review_scores_location', accommodationValues.review_scores_location);
+    formData.append('minimum_nights', formValues.minimum_nights);
     
     axios.post("http://localhost:8000/api/generate-prediction", formData)
     .then(function (response) {
@@ -366,11 +379,13 @@ function AddAirbnb() {
     formData.append('review_scores_cleanliness', accommodationValues.review_scores_cleanliness);
     formData.append('price', formValues.price);
     formData.append('house_number', formValues.house_number);
+    formData.append('minimum_nights', formValues.minimum_nights);
     
     axios.post("http://localhost:8000/api/add-airbnb", formData)
     .then(function (response) {
       if (response.status === 200) {
         setPopup({ trigger: true, title: "Airbnb added!", description: '' })
+        navigate("/")
       }
     })
     .catch(function (error) {
@@ -474,6 +489,7 @@ function AddAirbnb() {
             <hr /> 
             We need some information on the availability     
             <input {...inputs.availability_365} value={formValues[inputs.availability_365.name]} onChange={onChange} />
+            <input {...inputs.minimum_nights} value={formValues[inputs.minimum_nights.name]} onChange={onChange} />
             <select name="instant_bookable" defaultValue="" id="instant_bookable" onChange={onChange} required>
               <option value="" disabled hidden>Is instant bookable?</option>
               <option value="1">Yes</option>
