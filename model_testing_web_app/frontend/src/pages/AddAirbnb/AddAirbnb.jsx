@@ -432,10 +432,10 @@ function AddAirbnb() {
           <div className='app__new-form-inputs'>
             Based on the information that you gave, the advised price for your Airbnb is:
             <div className='app__new-form-prediction-values'>
-              €{predictionValues.price_static} (static)
+              ${predictionValues.price_static} (static)
             </div>
             <div className='app__new-form-prediction-values'>
-              €{predictionValues.price_dynamic} (dynamic)
+              ${predictionValues.price_dynamic} (dynamic)
             </div>
             {selectLocationScoreText(predictionValues.location_score) + 'You should a get a location score of:'}
             <div className='app__new-form-prediction-values'>
