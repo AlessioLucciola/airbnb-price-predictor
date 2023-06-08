@@ -87,11 +87,11 @@ def generate_prediction(request, *args, **kargs):
         pred_list_location = [distances[1], distances[0], distances[2], input_data['host_is_superhost'], input_data['has_free_parking'], indexer_solver.get_city(input_data['city']), input_data['has_paid_parking'], input_data['has_city_skyline_view'], input_data['has_elevator']]
 
         try:
-            price_static = round(math.exp(MODEL.make_price_prediction(pred_list_price_static)), 2)
+            price_static = round(MODEL.make_price_prediction(pred_list_price_static), 2)
             location_score = round(MODEL.make_rating_score_prediction(pred_list_rating), 2)
             rating_score = round(MODEL.make_location_score_prediction(pred_list_location), 2)
             pred_list_price_dynamic = [input_data['accommodates'], input_data['bedrooms'], input_data['n_bathrooms'], input_data['children_friendly'], input_data['availability_365'], input_data['has_tv'], input_data['is_bathroom_shared'], indexer_solver.get_room(input_data['room_type']), input_data['has_bathtub'], input_data['has_self_checkin'], input_data['has_private_entrance'], input_data['has_security_devices'], 3, input_data['has_patio'], input_data['is_smoking_allowed'], distances[2], input_data['has_free_parking'], input_data['host_identity_verified'], distances[0], input_data['review_scores_cleanliness'], input_data['host_is_superhost'], input_data['instant_bookable'], input_data['host_response_time'], input_data['has_elevator'], rating_score, location_score, input_data['has_cooking_basics'], input_data['number_of_reviews'], indexer_solver.get_city(input_data['city']), input_data['has_paid_parking'], input_data['minimum_nights']]
-            price_dynamic = round(math.exp(MODEL.make_price_prediction(pred_list_price_dynamic)), 2)
+            price_dynamic = round(MODEL.make_price_prediction(pred_list_price_dynamic), 2)
 
             output_data['price_static'] = price_static
             output_data['location_score'] = rating_score if location_score <= 5 else 5.0
