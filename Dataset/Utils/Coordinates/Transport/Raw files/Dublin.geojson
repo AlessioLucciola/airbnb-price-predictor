@@ -1,0 +1,4900 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-05-10T15:37:40Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/232338755",
+        "area": "yes",
+        "bench": "yes",
+        "bin": "yes",
+        "check_date:shelter": "2022-11-08",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.2917976,
+              53.3464033
+            ],
+            [
+              -6.2918023,
+              53.3464172
+            ],
+            [
+              -6.2918589,
+              53.3468643
+            ],
+            [
+              -6.2918618,
+              53.3469027
+            ],
+            [
+              -6.291937,
+              53.346898
+            ],
+            [
+              -6.2919156,
+              53.3467316
+            ],
+            [
+              -6.2919142,
+              53.3467067
+            ],
+            [
+              -6.2919035,
+              53.346617
+            ],
+            [
+              -6.2918959,
+              53.3465709
+            ],
+            [
+              -6.2918867,
+              53.3464934
+            ],
+            [
+              -6.2918764,
+              53.3464268
+            ],
+            [
+              -6.2918731,
+              53.346401
+            ],
+            [
+              -6.2917976,
+              53.3464033
+            ]
+          ]
+        ]
+      },
+      "id": "way/232338755"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/232338761",
+        "area": "yes",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paved",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.2916777,
+              53.3468731
+            ],
+            [
+              -6.2916111,
+              53.3464301
+            ],
+            [
+              -6.2915692,
+              53.3464331
+            ],
+            [
+              -6.2916049,
+              53.3466906
+            ],
+            [
+              -6.2915862,
+              53.3466915
+            ],
+            [
+              -6.2915947,
+              53.3467552
+            ],
+            [
+              -6.2916137,
+              53.3467543
+            ],
+            [
+              -6.2916309,
+              53.3468783
+            ],
+            [
+              -6.2916365,
+              53.3469041
+            ],
+            [
+              -6.2916644,
+              53.3469048
+            ],
+            [
+              -6.291682,
+              53.3469053
+            ],
+            [
+              -6.2916777,
+              53.3468731
+            ]
+          ]
+        ]
+      },
+      "id": "way/232338761"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278157011",
+        "area": "yes",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paved",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.2917755,
+              53.3468664
+            ],
+            [
+              -6.2918104,
+              53.3468648
+            ],
+            [
+              -6.2918104,
+              53.3468268
+            ],
+            [
+              -6.2917641,
+              53.3464671
+            ],
+            [
+              -6.2917459,
+              53.3464203
+            ],
+            [
+              -6.2917131,
+              53.3464222
+            ],
+            [
+              -6.2917131,
+              53.3464697
+            ],
+            [
+              -6.2917658,
+              53.3468298
+            ],
+            [
+              -6.2917755,
+              53.3468664
+            ]
+          ]
+        ]
+      },
+      "id": "way/278157011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278820348",
+        "area": "yes",
+        "name": "Outbound Platform",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.2288668,
+              53.3482299
+            ],
+            [
+              -6.2288633,
+              53.3482481
+            ],
+            [
+              -6.2288598,
+              53.3482658
+            ],
+            [
+              -6.2296486,
+              53.3483205
+            ],
+            [
+              -6.2296521,
+              53.3483027
+            ],
+            [
+              -6.2296556,
+              53.3482846
+            ],
+            [
+              -6.2288668,
+              53.3482299
+            ]
+          ]
+        ]
+      },
+      "id": "way/278820348"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278820350",
+        "area": "yes",
+        "name": "Inbound Platform",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.2296329,
+              53.3483908
+            ],
+            [
+              -6.2296358,
+              53.3483759
+            ],
+            [
+              -6.2288558,
+              53.3483208
+            ],
+            [
+              -6.2288529,
+              53.3483357
+            ],
+            [
+              -6.2296329,
+              53.3483908
+            ]
+          ]
+        ]
+      },
+      "id": "way/278820350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278820351",
+        "area": "yes",
+        "name": "Event Platform",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -6.2296321,
+              53.3484048
+            ],
+            [
+              -6.2296329,
+              53.3483908
+            ],
+            [
+              -6.2288529,
+              53.3483357
+            ],
+            [
+              -6.2288482,
+              53.3483535
+            ],
+            [
+              -6.2296321,
+              53.3484048
+            ]
+          ]
+        ]
+      },
+      "id": "way/278820351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/65083058",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2454134,
+            53.2925246
+          ],
+          [
+            -6.2449937,
+            53.292198
+          ]
+        ]
+      },
+      "id": "way/65083058"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/82004703",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2365023,
+            53.2859816
+          ],
+          [
+            -6.2366602,
+            53.2860878
+          ],
+          [
+            -6.2369172,
+            53.2862606
+          ]
+        ]
+      },
+      "id": "way/82004703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/105584732",
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "2",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2588757,
+            53.3308585
+          ],
+          [
+            -6.2588445,
+            53.3308077
+          ],
+          [
+            -6.2587925,
+            53.3307233
+          ],
+          [
+            -6.2587505,
+            53.33066
+          ],
+          [
+            -6.2586986,
+            53.3305901
+          ],
+          [
+            -6.2586733,
+            53.3305596
+          ],
+          [
+            -6.2586257,
+            53.3305024
+          ],
+          [
+            -6.2585699,
+            53.3304367
+          ]
+        ]
+      },
+      "id": "way/105584732"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/105584738",
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "2",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2587708,
+            53.3308804
+          ],
+          [
+            -6.2587461,
+            53.3308381
+          ],
+          [
+            -6.2586975,
+            53.3307596
+          ],
+          [
+            -6.2586511,
+            53.330691
+          ],
+          [
+            -6.2585904,
+            53.3306086
+          ],
+          [
+            -6.2584732,
+            53.3304636
+          ]
+        ]
+      },
+      "id": "way/105584738"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/112688715",
+        "highway": "footway",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2533116,
+            53.3162485
+          ],
+          [
+            -6.2534416,
+            53.3167044
+          ]
+        ]
+      },
+      "id": "way/112688715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/112688722",
+        "highway": "footway",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2534444,
+            53.316234
+          ],
+          [
+            -6.253565,
+            53.3166964
+          ]
+        ]
+      },
+      "id": "way/112688722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/227935555",
+        "bench": "yes",
+        "bin": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2366051,
+            53.2859191
+          ],
+          [
+            -6.2367982,
+            53.2860496
+          ],
+          [
+            -6.2369067,
+            53.2861228
+          ],
+          [
+            -6.2370199,
+            53.2861993
+          ]
+        ]
+      },
+      "id": "way/227935555"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/272696081",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2615798,
+            53.3388371
+          ],
+          [
+            -6.2612232,
+            53.3392999
+          ]
+        ]
+      },
+      "id": "way/272696081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/272696082",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2610961,
+            53.339262
+          ],
+          [
+            -6.2614397,
+            53.3388089
+          ]
+        ]
+      },
+      "id": "way/272696082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/272696234",
+        "bench": "yes",
+        "bin": "yes",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2627419,
+            53.3335762
+          ],
+          [
+            -6.2625637,
+            53.3331283
+          ]
+        ]
+      },
+      "id": "way/272696234"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/275535310",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2510661,
+            53.3499842
+          ],
+          [
+            -6.2518093,
+            53.3501661
+          ]
+        ]
+      },
+      "id": "way/275535310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278157886",
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.256355,
+            53.3266721
+          ],
+          [
+            -6.2562201,
+            53.3261854
+          ]
+        ]
+      },
+      "id": "way/278157886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278157887",
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2562308,
+            53.3266884
+          ],
+          [
+            -6.2560913,
+            53.326203
+          ]
+        ]
+      },
+      "id": "way/278157887"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278397481",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2932921,
+            53.3417005
+          ],
+          [
+            -6.2935569,
+            53.3421289
+          ]
+        ]
+      },
+      "id": "way/278397481"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278397483",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2921811,
+            53.3385245
+          ],
+          [
+            -6.2929707,
+            53.3384333
+          ]
+        ]
+      },
+      "id": "way/278397483"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278397484",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.296861,
+            53.3379106
+          ],
+          [
+            -6.2976251,
+            53.3378283
+          ]
+        ]
+      },
+      "id": "way/278397484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278397489",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2976506,
+            53.3379084
+          ],
+          [
+            -6.2968796,
+            53.3379926
+          ]
+        ]
+      },
+      "id": "way/278397489"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278397491",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2921565,
+            53.3384423
+          ],
+          [
+            -6.2929398,
+            53.3383498
+          ]
+        ]
+      },
+      "id": "way/278397491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278397492",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2934174,
+            53.3421545
+          ],
+          [
+            -6.2931567,
+            53.3417254
+          ]
+        ]
+      },
+      "id": "way/278397492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278404006",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2506352,
+            53.3013728
+          ],
+          [
+            -6.2506789,
+            53.3017857
+          ]
+        ]
+      },
+      "id": "way/278404006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278404008",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2448802,
+            53.2922421
+          ],
+          [
+            -6.2453019,
+            53.2925746
+          ]
+        ]
+      },
+      "id": "way/278404008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278404010",
+        "highway": "footway",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2545225,
+            53.3206091
+          ],
+          [
+            -6.2546511,
+            53.3210719
+          ]
+        ]
+      },
+      "id": "way/278404010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278404015",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2507701,
+            53.301369
+          ],
+          [
+            -6.2508188,
+            53.3017786
+          ]
+        ]
+      },
+      "id": "way/278404015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278404016",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.251843,
+            53.3101424
+          ],
+          [
+            -6.2517823,
+            53.3096853
+          ]
+        ]
+      },
+      "id": "way/278404016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278404018",
+        "highway": "footway",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2546546,
+            53.3205965
+          ],
+          [
+            -6.2547831,
+            53.3210563
+          ]
+        ]
+      },
+      "id": "way/278404018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278404019",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2516955,
+            53.310152
+          ],
+          [
+            -6.2516311,
+            53.309692
+          ]
+        ]
+      },
+      "id": "way/278404019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278831085",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "name": "Jervis",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2660494,
+            53.3476431
+          ],
+          [
+            -6.2655098,
+            53.3477195
+          ]
+        ]
+      },
+      "id": "way/278831085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278927968",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "name": "Four Courts",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2730587,
+            53.3468577
+          ],
+          [
+            -6.2738484,
+            53.3469363
+          ]
+        ]
+      },
+      "id": "way/278927968"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278927969",
+        "highway": "footway",
+        "lit": "yes",
+        "name": "Four Courts",
+        "public_transport": "platform",
+        "railway": "platform",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2738762,
+            53.346853
+          ],
+          [
+            -6.2730839,
+            53.3467698
+          ]
+        ]
+      },
+      "id": "way/278927969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278927972",
+        "highway": "footway",
+        "name": "Smithfield",
+        "public_transport": "platform",
+        "railway": "platform",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.277333,
+            53.3471409
+          ],
+          [
+            -6.2781195,
+            53.3471866
+          ]
+        ]
+      },
+      "id": "way/278927972"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278927973",
+        "bench": "yes",
+        "highway": "footway",
+        "name": "Smithfield",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.278126,
+            53.347137
+          ],
+          [
+            -6.2773442,
+            53.3470893
+          ]
+        ]
+      },
+      "id": "way/278927973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278927976",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "name": "Museum",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2863333,
+            53.3478072
+          ],
+          [
+            -6.2871217,
+            53.3478344
+          ]
+        ]
+      },
+      "id": "way/278927976"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278927978",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "name": "Museum",
+        "passenger_information_display": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2871138,
+            53.3479177
+          ],
+          [
+            -6.2866232,
+            53.3479041
+          ],
+          [
+            -6.2863333,
+            53.3478953
+          ]
+        ]
+      },
+      "id": "way/278927978"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/279380943",
+        "bench": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2375221,
+            53.3487917
+          ],
+          [
+            -6.2367339,
+            53.3487489
+          ]
+        ]
+      },
+      "id": "way/279380943"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/279380944",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.236724,
+            53.3488265
+          ],
+          [
+            -6.2375079,
+            53.3488722
+          ]
+        ]
+      },
+      "id": "way/279380944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320075221",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3757519,
+            53.2987244
+          ],
+          [
+            -6.375041,
+            53.2991556
+          ]
+        ]
+      },
+      "id": "way/320075221"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320075222",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3756839,
+            53.2986819
+          ],
+          [
+            -6.3749873,
+            53.2991235
+          ]
+        ]
+      },
+      "id": "way/320075222"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320253370",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.395183,
+            53.2936389
+          ],
+          [
+            -6.3959512,
+            53.2934738
+          ]
+        ]
+      },
+      "id": "way/320253370"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320253371",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3951429,
+            53.293569
+          ],
+          [
+            -6.3959055,
+            53.2934012
+          ]
+        ]
+      },
+      "id": "way/320253371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320256157",
+        "bench": "no",
+        "bin": "yes",
+        "highway": "footway",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3749676,
+            53.2874537
+          ],
+          [
+            -6.3742717,
+            53.2876237
+          ]
+        ]
+      },
+      "id": "way/320256157"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320262214",
+        "highway": "footway",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3791529,
+            53.2895447
+          ],
+          [
+            -6.3786845,
+            53.2891587
+          ]
+        ]
+      },
+      "id": "way/320262214"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320262215",
+        "bench": "yes",
+        "highway": "footway",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3785663,
+            53.2892072
+          ],
+          [
+            -6.3790134,
+            53.289596
+          ]
+        ]
+      },
+      "id": "way/320262215"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320310035",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3650249,
+            53.3038227
+          ],
+          [
+            -6.3656323,
+            53.3036252
+          ]
+        ]
+      },
+      "id": "way/320310035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320310036",
+        "bench": "yes",
+        "bin": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3649547,
+            53.3037498
+          ],
+          [
+            -6.3655612,
+            53.3035501
+          ]
+        ]
+      },
+      "id": "way/320310036"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320310854",
+        "bench": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3696964,
+            53.3165747
+          ],
+          [
+            -6.3699068,
+            53.3170759
+          ]
+        ]
+      },
+      "id": "way/320310854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320310855",
+        "bench": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.370031,
+            53.3170585
+          ],
+          [
+            -6.3698369,
+            53.3165533
+          ]
+        ]
+      },
+      "id": "way/320310855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320311804",
+        "public_transport": "platform",
+        "railway": "platform",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.343713,
+            53.3265375
+          ],
+          [
+            -6.3430844,
+            53.3267184
+          ]
+        ]
+      },
+      "id": "way/320311804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320311805",
+        "bench": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3431395,
+            53.3267864
+          ],
+          [
+            -6.3437662,
+            53.3266069
+          ]
+        ]
+      },
+      "id": "way/320311805"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320311907",
+        "bench": "yes",
+        "bin": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3340408,
+            53.3291378
+          ],
+          [
+            -6.3334802,
+            53.3293909
+          ]
+        ]
+      },
+      "id": "way/320311907"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320311908",
+        "bench": "yes",
+        "bin": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3335746,
+            53.3294536
+          ],
+          [
+            -6.3341144,
+            53.329208
+          ]
+        ]
+      },
+      "id": "way/320311908"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320311988",
+        "bench": "yes",
+        "bin": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3270216,
+            53.3343583
+          ],
+          [
+            -6.3277955,
+            53.3342495
+          ]
+        ]
+      },
+      "id": "way/320311988"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320311989",
+        "bench": "yes",
+        "bin": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3277634,
+            53.3341703
+          ],
+          [
+            -6.3269882,
+            53.3342824
+          ]
+        ]
+      },
+      "id": "way/320311989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320312258",
+        "bench": "yes",
+        "bin": "yes",
+        "check_date:bin": "2022-11-08",
+        "highway": "footway",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3185599,
+            53.3353587
+          ],
+          [
+            -6.317788,
+            53.3354425
+          ]
+        ]
+      },
+      "id": "way/320312258"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320312259",
+        "bench": "yes",
+        "highway": "footway",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3185453,
+            53.3352887
+          ],
+          [
+            -6.3177652,
+            53.3353697
+          ]
+        ]
+      },
+      "id": "way/320312259"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320312261",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3139663,
+            53.3358059
+          ],
+          [
+            -6.3132073,
+            53.3358995
+          ]
+        ]
+      },
+      "id": "way/320312261"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320312262",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3139907,
+            53.335874
+          ],
+          [
+            -6.3132318,
+            53.3359638
+          ]
+        ]
+      },
+      "id": "way/320312262"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320312614",
+        "bench": "yes",
+        "bin": "yes",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3068647,
+            53.3366944
+          ],
+          [
+            -6.3076426,
+            53.3366063
+          ]
+        ]
+      },
+      "id": "way/320312614"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/320312616",
+        "bench": "yes",
+        "bin": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3076211,
+            53.3365278
+          ],
+          [
+            -6.3068325,
+            53.3366127
+          ]
+        ]
+      },
+      "id": "way/320312616"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/388925010",
+        "bench": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3841952,
+            53.2932987
+          ],
+          [
+            -6.384701,
+            53.2936684
+          ]
+        ]
+      },
+      "id": "way/388925010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/388925011",
+        "bench": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3840842,
+            53.293352
+          ],
+          [
+            -6.38459,
+            53.2937206
+          ]
+        ]
+      },
+      "id": "way/388925011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/525717797",
+        "departures_board": "realtime",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "platform",
+        "railway": "platform",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2579705,
+            53.3418502
+          ],
+          [
+            -6.2578337,
+            53.3423363
+          ]
+        ]
+      },
+      "id": "way/525717797"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/525717798",
+        "departures_board": "realtime",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "platform",
+        "railway": "platform",
+        "surface": "paved",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2581247,
+            53.3419607
+          ],
+          [
+            -6.2579799,
+            53.3424548
+          ]
+        ]
+      },
+      "id": "way/525717798"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/541829202",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "surface": "paved",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "3"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2774426,
+            53.3568281
+          ],
+          [
+            -6.277429,
+            53.3574977
+          ]
+        ]
+      },
+      "id": "way/541829202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/541829203",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "surface": "paved",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "3"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2772857,
+            53.3568249
+          ],
+          [
+            -6.2772674,
+            53.3574955
+          ]
+        ]
+      },
+      "id": "way/541829203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/542016185",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "4",
+        "wikidata": "Q4972306"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2733132,
+            53.3542353
+          ],
+          [
+            -6.2742675,
+            53.3539985
+          ]
+        ]
+      },
+      "id": "way/542016185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/542016186",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "4",
+        "wikidata": "Q4972306"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2732632,
+            53.3541572
+          ],
+          [
+            -6.2736554,
+            53.354066
+          ],
+          [
+            -6.274222,
+            53.3539314
+          ]
+        ]
+      },
+      "id": "way/542016186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/542383587",
+        "cutting": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "no",
+        "surface": "paved",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2790392,
+            53.3606503
+          ],
+          [
+            -6.2787293,
+            53.3602387
+          ]
+        ]
+      },
+      "id": "way/542383587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/542383588",
+        "cutting": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "no",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "2"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2791548,
+            53.3606116
+          ],
+          [
+            -6.2788368,
+            53.3602002
+          ]
+        ]
+      },
+      "id": "way/542383588"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/542383589",
+        "highway": "footway",
+        "lit": "yes",
+        "mapillary": "224193736171106",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "smoothness": "good",
+        "surface": "paved",
+        "survey:date": "2018-06-08",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2651707,
+            53.351138
+          ],
+          [
+            -6.265919,
+            53.3515712
+          ]
+        ]
+      },
+      "id": "way/542383589"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/542386079",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paved",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "3"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2821326,
+            53.3646198
+          ],
+          [
+            -6.2817562,
+            53.3641288
+          ],
+          [
+            -6.2815629,
+            53.3638643
+          ]
+        ]
+      },
+      "id": "way/542386079"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/542386083",
+        "highway": "footway",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paved",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2822328,
+            53.3645929
+          ],
+          [
+            -6.2816628,
+            53.3638375
+          ]
+        ]
+      },
+      "id": "way/542386083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/542387379",
+        "highway": "footway",
+        "layer": "-1",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "3"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.298189,
+            53.3722904
+          ],
+          [
+            -6.2974804,
+            53.3721424
+          ],
+          [
+            -6.2972194,
+            53.3720878
+          ]
+        ]
+      },
+      "id": "way/542387379"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/542387380",
+        "highway": "footway",
+        "layer": "-1",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "3"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.298144,
+            53.3723671
+          ],
+          [
+            -6.2978036,
+            53.372296
+          ],
+          [
+            -6.2971743,
+            53.3721646
+          ]
+        ]
+      },
+      "id": "way/542387380"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/546510011",
+        "bench": "no",
+        "bin": "yes",
+        "departures_board": "realtime",
+        "highway": "footway",
+        "lit": "yes",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "no",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2600199,
+            53.3491209
+          ],
+          [
+            -6.2599925,
+            53.3490582
+          ],
+          [
+            -6.2597791,
+            53.3485696
+          ]
+        ]
+      },
+      "id": "way/546510011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/546510013",
+        "bench": "yes",
+        "bin": "yes",
+        "check_date:bench": "2023-01-22",
+        "departures_board": "realtime",
+        "highway": "footway",
+        "lit": "yes",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "no",
+        "smoothness": "excellent",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2577984,
+            53.3494283
+          ],
+          [
+            -6.2575874,
+            53.3489146
+          ]
+        ]
+      },
+      "id": "way/546510013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/546510014",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "footway",
+        "lit": "yes",
+        "name": "O'Connell Upper",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "no",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2612204,
+            53.3519763
+          ],
+          [
+            -6.2612323,
+            53.3519736
+          ],
+          [
+            -6.2609165,
+            53.3512557
+          ],
+          [
+            -6.2608905,
+            53.3512341
+          ]
+        ]
+      },
+      "id": "way/546510014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/546510015",
+        "highway": "footway",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "no",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2609391,
+            53.3528965
+          ],
+          [
+            -6.2601604,
+            53.3532472
+          ]
+        ]
+      },
+      "id": "way/546510015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/546510016",
+        "bench": "yes",
+        "bin": "yes",
+        "departures_board": "realtime",
+        "highway": "footway",
+        "lit": "yes",
+        "name": "Westmoreland",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "no",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes",
+        "width": "4"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2589752,
+            53.3466133
+          ],
+          [
+            -6.2590067,
+            53.3466134
+          ],
+          [
+            -6.2590103,
+            53.3461293
+          ],
+          [
+            -6.2589725,
+            53.3461287
+          ]
+        ]
+      },
+      "id": "way/546510016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/546510017",
+        "bench": "no",
+        "bin": "yes",
+        "departures_board": "realtime",
+        "highway": "footway",
+        "lit": "yes",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "no",
+        "surface": "paving_stones",
+        "tactile_paving": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.2578445,
+            53.34544
+          ],
+          [
+            -6.2582617,
+            53.3453011
+          ],
+          [
+            -6.2583585,
+            53.3452638
+          ],
+          [
+            -6.2583756,
+            53.3452572
+          ],
+          [
+            -6.2585653,
+            53.3451841
+          ]
+        ]
+      },
+      "id": "way/546510017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/695745462",
+        "bench": "yes",
+        "highway": "footway",
+        "public_transport": "platform",
+        "railway": "platform",
+        "shelter": "yes",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -6.3742193,
+            53.2875447
+          ],
+          [
+            -6.3749294,
+            53.2873662
+          ]
+        ]
+      },
+      "id": "way/695745462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/665844",
+        "layer": "1",
+        "name": "Cowper",
+        "name:en": "Cowper",
+        "name:ga": "Cowper",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/cowper.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2534261,
+          53.3164812
+        ]
+      },
+      "id": "node/665844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/666663",
+        "layer": "1",
+        "name": "Milltown",
+        "name:en": "Milltown",
+        "name:ga": "Baile An Mhuilinn",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/milltown.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2517091,
+          53.3099147
+        ]
+      },
+      "id": "node/666663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/19223931",
+        "name": "Windy Arbour",
+        "name:en": "Windy Arbour",
+        "name:ga": "Na Glasáin",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/windy-arbour.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2507018,
+          53.301591
+        ]
+      },
+      "id": "node/19223931"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/51452792",
+        "name": "Balally",
+        "name:en": "Balally",
+        "name:ga": "Baile Amhlaoibh",
+        "note": "Wheelchair access via lift from Overend Avenue. Wheelchair access via ramp from park and ride. Unknown wheelchair access from Rockfield Central. No wheelchair access from Rockfield.",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/balally.html",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2366886,
+          53.2860688
+        ]
+      },
+      "id": "node/51452792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/51452916",
+        "name": "Harcourt",
+        "name:ga": "Sráid Fhearchair",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/harcourt.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2626171,
+          53.3333651
+        ]
+      },
+      "id": "node/51452916"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/51452944",
+        "name": "St. Stephen's Green",
+        "name:en": "St. Stephen's Green",
+        "name:ga": "Faiche Stiabhna",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/st-stephens-green.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2613147,
+          53.3390566
+        ]
+      },
+      "id": "node/51452944"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/60475466",
+        "alt_name:en": "Charlemont Luas",
+        "alt_name:ga": "Luas Charlemont",
+        "layer": "1",
+        "name": "Charlemont",
+        "name:en": "Charlemont",
+        "name:ga": "Charlemont",
+        "note": "Lift to Grand Parade only, none to Charlemont Place",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/charlemont.html",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2587038,
+          53.3307198
+        ]
+      },
+      "id": "node/60475466"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/247700851",
+        "layer": "1",
+        "line": "Luas Red Line",
+        "name": "Suir Road",
+        "name:en": "Suir Road",
+        "name:ga": "Bóthar na Siúire",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/suir-road.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3072591,
+          53.3366224
+        ]
+      },
+      "id": "node/247700851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/247702675",
+        "alt_name:ga": "Coill na Feá",
+        "layer": "1",
+        "name": "Beechwood",
+        "name:en": "Beechwood",
+        "name:ga": "Bóthar Coill na Feá",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/beechwood.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2546297,
+          53.3208449
+        ]
+      },
+      "id": "node/247702675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/247857993",
+        "line": "Luas Red Line",
+        "name": "Goldenbridge",
+        "name:en": "Goldenbridge",
+        "name:ga": "An Droichead Órga",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/goldenbridge.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3135686,
+          53.3359036
+        ]
+      },
+      "id": "node/247857993"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/247857995",
+        "line": "Luas Red Line",
+        "name": "Blackhorse",
+        "name:en": "Blackhorse",
+        "name:ga": "An Capall Dubh",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/blackhorse.html",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.327416,
+          53.3342735
+        ]
+      },
+      "id": "node/247857995"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/312656638",
+        "line": "Luas Red Line",
+        "name": "Hospital",
+        "name:ga": "Ospidéal Thamhlachta",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/hospital.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3788565,
+          53.2893571
+        ]
+      },
+      "id": "node/312656638"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/312656643",
+        "name": "Cookstown",
+        "name:ga": "Baile on Chócaigh",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/cookstown.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.38441,
+          53.2934954
+        ]
+      },
+      "id": "node/312656643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/566891066",
+        "line": "Red",
+        "name": "The Point",
+        "name:en": "The Point",
+        "name:ga": "Iosta na Rinne",
+        "network": "Luas",
+        "network:wikidata": "Q612560",
+        "operator": "Transdev Ireland",
+        "operator:wikidata": "Q442637",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2292621,
+          53.3483063
+        ]
+      },
+      "id": "node/566891066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/719041781",
+        "line": "Luas Red Line",
+        "name": "Fettercairn",
+        "name:en": "Fettercairn",
+        "name:ga": "Fothair Chardain",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/fettercairn.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3955398,
+          53.2935359
+        ]
+      },
+      "id": "node/719041781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1221182127",
+        "name": "Dundrum",
+        "name:en": "Dundrum",
+        "name:ga": "Dún Droma",
+        "note": "Wheelchair access via lift at Main Street, adjacent to main bridge. Wheelchair access via ramps at Taney Drive. No wheelchair access at Usher House / Dundrum Office Park",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/dundrum.html",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2451244,
+          53.2923909
+        ]
+      },
+      "id": "node/1221182127"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1294004355",
+        "bench": "yes",
+        "line": "Luas Red Line",
+        "name": "Busáras",
+        "name:ga": "Busáras",
+        "note": "Wheelchair access - ramp only at east end of stop, steps only at west end of stop.",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "shelter": "yes",
+        "tram": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.251388,
+          53.3500971
+        ]
+      },
+      "id": "node/1294004355"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1396867040",
+        "line": "Luas Red Line",
+        "name": "Museum",
+        "name:en": "Museum",
+        "name:ga": "Ard-Mhúsaem",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/museum.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2867327,
+          53.3478775
+        ]
+      },
+      "id": "node/1396867040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1396871412",
+        "line": "Luas Red Line",
+        "name": "James's",
+        "name:en": "James's",
+        "name:ga": "Ospidéal San Séamas",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/jamess.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.293363,
+          53.3418837
+        ]
+      },
+      "id": "node/1396871412"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1396874422",
+        "line": "Luas Red Line",
+        "name": "Kylemore",
+        "name:en": "Kylemore",
+        "name:ga": "An Choill Mhóir",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/kylemore.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3435665,
+          53.3266359
+        ]
+      },
+      "id": "node/1396874422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1396878999",
+        "line": "Luas Red Line",
+        "name": "Fatima",
+        "name:ga": "Fatima",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "toilets:wheelchair": "no",
+        "tram": "yes",
+        "website": "https://luas.ie/fatima.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2925134,
+          53.3384498
+        ]
+      },
+      "id": "node/1396878999"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1396885859",
+        "line": "Luas Red Line",
+        "name": "Rialto",
+        "name:ga": "Rialto",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/rialto.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2972219,
+          53.337923
+        ]
+      },
+      "id": "node/1396885859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1396888181",
+        "line": "Luas Red Line",
+        "name": "Drimnagh",
+        "name:en": "Drimnagh",
+        "name:ga": "Droimeanach",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/drimnagh.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3180819,
+          53.3353824
+        ]
+      },
+      "id": "node/1396888181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1396891181",
+        "line": "Luas Red Line",
+        "name": "Red Cow",
+        "name:ga": "An Bhó Dhearg",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/red-cow.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3698479,
+          53.3168536
+        ]
+      },
+      "id": "node/1396891181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1396896492",
+        "line": "Luas Red Line",
+        "name": "Bluebell",
+        "name:en": "Bluebell",
+        "name:ga": "An Cloigín Gorm",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/bluebell.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3338757,
+          53.3292856
+        ]
+      },
+      "id": "node/1396896492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1396932782",
+        "line": "Luas Red Line",
+        "name": "Tallaght",
+        "name:ga": "Tamhlacht",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "toilets:wheelchair": "no",
+        "tram": "yes",
+        "website": "https://luas.ie/tallaght.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3746438,
+          53.2874685
+        ]
+      },
+      "id": "node/1396932782"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1422018946",
+        "bench": "yes",
+        "line": "Luas Red Line",
+        "name": "Heuston",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "shelter": "yes",
+        "tram": "yes",
+        "website": "https://luas.ie/heuston.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2918069,
+          53.3466535
+        ]
+      },
+      "id": "node/1422018946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1422062053",
+        "line": "Luas Red Line",
+        "name": "Spencer Dock",
+        "name:ga": "Duga Spencer",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2371518,
+          53.348827
+        ]
+      },
+      "id": "node/1422062053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1424006124",
+        "line": "Luas Red Line",
+        "name": "Kingswood",
+        "name:ga": "Coill an Rí",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/kingswood.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3653029,
+          53.3036947
+        ]
+      },
+      "id": "node/1424006124"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2363501445",
+        "addr:street": "Cabra Road",
+        "alt_name:en": "Phibsborough Luas",
+        "alt_name:ga": "Luas Baile Phib",
+        "name": "Phibsborough",
+        "name:en": "Phibsborough",
+        "name:ga": "Baile Phib",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/phibsborough.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2789691,
+          53.3604184
+        ]
+      },
+      "id": "node/2363501445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2418681423",
+        "line": "Luas Red Line",
+        "name": "Abbey Street",
+        "name:en": "Abbey Street",
+        "name:ga": "Sráid na Mainistreach",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/abbey-street.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2581728,
+          53.348605
+        ]
+      },
+      "id": "node/2418681423"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2685561297",
+        "line": "Luas Red Line",
+        "name": "Mayor Square - NCI",
+        "name:ga": "Cearnóg an Mhéara - CNÉ",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2433875,
+          53.3492541
+        ]
+      },
+      "id": "node/2685561297"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2801660621",
+        "line": "Luas Red Line",
+        "name": "Connolly",
+        "name:en": "Connolly",
+        "name:ga": "Conghaile",
+        "note": "Wheelchair access. Via ramps to Amiens Street. Via lift from Luas platforms to station forecourt, at information desk. Via lift from station lower concourse to station main concourse. Access to Harbourmaster Place via Mayor Street Lower.",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2499702,
+          53.3509039
+        ]
+      },
+      "id": "node/2801660621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3257148989",
+        "line": "Luas Red Line",
+        "name": "George's Dock",
+        "name:ga": "Duga Sheoirse",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q5535862"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2475822,
+          53.3495337
+        ]
+      },
+      "id": "node/3257148989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3265722896",
+        "name": "Belgard",
+        "name:ga": "Belgard",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/belgard.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3754338,
+          53.2989621
+        ]
+      },
+      "id": "node/3265722896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3451120785",
+        "name": "Jervis",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/jervis.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2658498,
+          53.3476367
+        ]
+      },
+      "id": "node/3451120785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3451159931",
+        "line": "Luas Red Line",
+        "name": "Four Courts",
+        "name:en": "Four Courts",
+        "name:ga": "Na Ceithre Cúirteanna",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/four-courts.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.273663,
+          53.3468955
+        ]
+      },
+      "id": "node/3451159931"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3451213775",
+        "name": "Harcourt",
+        "name:ga": "Sráid Fhearchair",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/harcourt.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2626937,
+          53.3333557
+        ]
+      },
+      "id": "node/3451213775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3451318404",
+        "name": "Jervis",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/jervis.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2652271,
+          53.3476996
+        ]
+      },
+      "id": "node/3451318404"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3451318438",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/four-courts.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2736853,
+          53.3468648
+        ]
+      },
+      "id": "node/3451318438"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3451722881",
+        "alt_name:en": "Charlemont Luas",
+        "alt_name:ga": "Luas Charlemont",
+        "layer": "1",
+        "name": "Charlemont",
+        "name:en": "Charlemont",
+        "name:ga": "Charlemont",
+        "note": "Lift to Grand Parade only, none to Charlemont Place",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/charlemont.html",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.258738,
+          53.330697
+        ]
+      },
+      "id": "node/3451722881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3451767974",
+        "name": "Dundrum",
+        "name:en": "Dundrum",
+        "name:ga": "Dún Droma",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/dundrum.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2451688,
+          53.2923748
+        ]
+      },
+      "id": "node/3451767974"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3451922903",
+        "name": "Marlborough",
+        "name:ga": "Maoilbhríde",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/marlborough.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2577573,
+          53.3491832
+        ]
+      },
+      "id": "node/3451922903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3452011330",
+        "name": "Westmoreland",
+        "name:en": "Westmoreland",
+        "name:ga": "Westmoreland",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "shelter": "yes",
+        "tram": "yes",
+        "website": "https://luas.ie/westmoreland.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2590268,
+          53.346326
+        ]
+      },
+      "id": "node/3452011330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3452114231",
+        "addr:street": "Rathdown Road",
+        "alt_name:en": "Grangegorman Luas",
+        "alt_name:ga": "Luas Gráinseach Ghormáin",
+        "name": "Grangegorman",
+        "name:en": "Grangegorman",
+        "name:ga": "Gráinseach Ghormáin",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/grangegorman.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.27739,
+          53.357098
+        ]
+      },
+      "id": "node/3452114231"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3452394401",
+        "name": "Mayor Square - NCI",
+        "name:ga": "Cearnóg an Mhéara - CNÉ",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2433914,
+          53.3492308
+        ]
+      },
+      "id": "node/3452394401"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3452492564",
+        "addr:street": "Constitution Hill",
+        "name": "Broadstone - DIT",
+        "name:ga": "An Chloch Leathan ITBhÁC",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/broadstone-dit.html",
+        "wheelchair": "yes",
+        "wikidata": "Q4972306"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2737932,
+          53.3540939
+        ]
+      },
+      "id": "node/3452492564"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3452492565",
+        "addr:street": "Dominick Street Lower",
+        "name": "Dominick",
+        "name:ga": "Doiminic",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/dominick.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2655263,
+          53.3513944
+        ]
+      },
+      "id": "node/3452492565"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3452493714",
+        "name": "Dawson",
+        "name:ga": "Dásain",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/dawson.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.257987,
+          53.342166
+        ]
+      },
+      "id": "node/3452493714"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3452698951",
+        "name": "Tallaght",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/tallaght.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3746622,
+          53.2874921
+        ]
+      },
+      "id": "node/3452698951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3453079242",
+        "name": "James's",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/jamess.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2933061,
+          53.3418898
+        ]
+      },
+      "id": "node/3453079242"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3454032673",
+        "name": "Cookstown",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/cookstown.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3843649,
+          53.293516
+        ]
+      },
+      "id": "node/3454032673"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3459902186",
+        "alt_name:ga": "An Tríonóid",
+        "loc_name:en": "Trinity Luas",
+        "loc_name:ga": "Luas An Tríonóid",
+        "name": "Trinity",
+        "name:en": "Trinity",
+        "name:ga": "Tríonóid",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/trinity.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2582748,
+          53.3453267
+        ]
+      },
+      "id": "node/3459902186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3459902187",
+        "alt_name:en": "O'Connell - GPO Luas",
+        "alt_name:ga": "Luas Ó Conaill AOP",
+        "name": "O'Connell - GPO",
+        "name:en": "O'Connell - GPO",
+        "name:ga": "Ó Conaill AOP",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://www.luas.ie/oconnell-gpo.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2599274,
+          53.3488429
+        ]
+      },
+      "id": "node/3459902187"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3459902189",
+        "alt_name:en": "O'Connell Upper Luas",
+        "alt_name:ga": "Luas Ó Conaill Uachtarach",
+        "name": "O'Connell Upper",
+        "name:en": "O'Connell Upper",
+        "name:ga": "Ó Conaill Uachtarach",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://www.luas.ie/oconnell-upper.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2610816,
+          53.3515891
+        ]
+      },
+      "id": "node/3459902189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3459902190",
+        "alt_name:en": "Parnell Luas",
+        "alt_name:ga": "Luas Parnell",
+        "name": "Parnell",
+        "name:ga": "Parnell",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/parnell.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2604649,
+          53.3530703
+        ]
+      },
+      "id": "node/3459902190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3709896536",
+        "name": "Smithfield",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/smithfield.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2777788,
+          53.3471536
+        ]
+      },
+      "id": "node/3709896536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4009942996",
+        "layer": "1",
+        "line": "Luas Green Line",
+        "name": "Ranelagh",
+        "name:en": "Ranelagh",
+        "name:ga": "Raghnallach",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/ranelagh.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.256152,
+          53.326274
+        ]
+      },
+      "id": "node/4009942996"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4392909450",
+        "addr:street": "Rathdown Road",
+        "alt_name:en": "Grangegorman Luas",
+        "alt_name:ga": "Luas Gráinseach Ghormáin",
+        "name": "Grangegorman",
+        "name:en": "Grangegorman",
+        "name:ga": "Gráinseach Ghormáin",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/grangegorman.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2773204,
+          53.3571083
+        ]
+      },
+      "id": "node/4392909450"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4669407702",
+        "addr:street": "Connaught Street",
+        "alt_name:en": "Cabra Luas",
+        "alt_name:ga": "Luas Cabrach",
+        "name": "Cabra",
+        "name:en": "Cabra",
+        "name:ga": "Cabrach",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2818095,
+          53.3640708
+        ]
+      },
+      "id": "node/4669407702"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372263",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/hospital.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3788125,
+          53.2893673
+        ]
+      },
+      "id": "node/4683372263"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372264",
+        "line": "Red",
+        "name": "The Point",
+        "name:en": "The Point",
+        "name:ga": "Iosta na Rinne",
+        "network": "Luas",
+        "network:wikidata": "Q612560",
+        "operator": "Transdev Ireland",
+        "operator:wikidata": "Q442637",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2292374,
+          53.3483938
+        ]
+      },
+      "id": "node/4683372264"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372265",
+        "line": "Red",
+        "name": "The Point",
+        "name:en": "The Point",
+        "name:ga": "Iosta na Rinne",
+        "network": "Luas",
+        "network:wikidata": "Q612560",
+        "operator": "Transdev Ireland",
+        "operator:wikidata": "Q442637",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2292495,
+          53.3483354
+        ]
+      },
+      "id": "node/4683372265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372266",
+        "name": "Spencer Dock",
+        "name:ga": "Duga Spencer",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2371593,
+          53.3488006
+        ]
+      },
+      "id": "node/4683372266"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372267",
+        "name": "George's Dock",
+        "name:ga": "Duga Sheoirse",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2475884,
+          53.3495095
+        ]
+      },
+      "id": "node/4683372267"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372268",
+        "name": "Connolly",
+        "name:ga": "Conghaile",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2499225,
+          53.3508988
+        ]
+      },
+      "id": "node/4683372268"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372269",
+        "name": "Busáras",
+        "name:ga": "Busáras",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2514363,
+          53.3500432
+        ]
+      },
+      "id": "node/4683372269"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372270",
+        "name": "Abbey Street",
+        "name:ga": "Sráid na Mainistreach",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/abbey-street.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2581626,
+          53.3485778
+        ]
+      },
+      "id": "node/4683372270"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372272",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/smithfield.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2777873,
+          53.3471286
+        ]
+      },
+      "id": "node/4683372272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372273",
+        "name": "Museum",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/museum.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2867358,
+          53.3478503
+        ]
+      },
+      "id": "node/4683372273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372274",
+        "bench": "yes",
+        "line": "Red Line",
+        "name": "Heuston",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "shelter": "yes",
+        "tram": "yes",
+        "website": "https://luas.ie/heuston.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2916785,
+          53.3466571
+        ]
+      },
+      "id": "node/4683372274"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372275",
+        "bench": "yes",
+        "line": "Red Line",
+        "name": "Heuston",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "shelter": "yes",
+        "tram": "yes",
+        "website": "https://luas.ie/heuston.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2917284,
+          53.3466557
+        ]
+      },
+      "id": "node/4683372275"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372276",
+        "name": "Fatima",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/fatima.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.292507,
+          53.338425
+        ]
+      },
+      "id": "node/4683372276"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372277",
+        "name": "Rialto",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/rialto.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.297221,
+          53.3378925
+        ]
+      },
+      "id": "node/4683372277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372278",
+        "name": "Suir Road",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/suir-road.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3072534,
+          53.3365966
+        ]
+      },
+      "id": "node/4683372278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372279",
+        "name": "Fettercairn",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/fettercairn.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3955215,
+          53.2935066
+        ]
+      },
+      "id": "node/4683372279"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372280",
+        "name": "Goldenbridge",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/goldenbridge.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3135576,
+          53.3358783
+        ]
+      },
+      "id": "node/4683372280"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372281",
+        "name": "Drimnagh",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/drimnagh.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3180778,
+          53.3353624
+        ]
+      },
+      "id": "node/4683372281"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372282",
+        "name": "Blackhorse",
+        "name:en": "Blackhorse",
+        "name:ga": "An Capall Dubh",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/blackhorse.html",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3274085,
+          53.3342488
+        ]
+      },
+      "id": "node/4683372282"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372283",
+        "name": "Bluebell",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/bluebell.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3338549,
+          53.3292644
+        ]
+      },
+      "id": "node/4683372283"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372284",
+        "name": "Kylemore",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/kylemore.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3435423,
+          53.3266112
+        ]
+      },
+      "id": "node/4683372284"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372285",
+        "name": "Red Cow",
+        "name:ga": "An Bhó Dhearg",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/red-cow.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3698977,
+          53.3168523
+        ]
+      },
+      "id": "node/4683372285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372286",
+        "name": "Kingswood",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/kingswood.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3652803,
+          53.3036751
+        ]
+      },
+      "id": "node/4683372286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683372287",
+        "name": "Belgard",
+        "name:ga": "Belgard",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/belgard.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3752899,
+          53.2988775
+        ]
+      },
+      "id": "node/4683372287"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683697869",
+        "name": "Balally",
+        "name:en": "Balally",
+        "name:ga": "Baile Amhlaoibh",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/balally.html",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2367381,
+          53.286048
+        ]
+      },
+      "id": "node/4683697869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683697870",
+        "name": "Windy Arbour",
+        "name:en": "Windy Arbour",
+        "name:ga": "Na Glasáin",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/windy-arbour.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.250756,
+          53.3015921
+        ]
+      },
+      "id": "node/4683697870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683697871",
+        "name": "Milltown",
+        "name:en": "Milltown",
+        "name:ga": "Baile An Mhuilinn",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/milltown.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2517585,
+          53.3099139
+        ]
+      },
+      "id": "node/4683697871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683697872",
+        "name": "Cowper",
+        "name:en": "Cowper",
+        "name:ga": "Cowper",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/cowper.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.253471,
+          53.3164779
+        ]
+      },
+      "id": "node/4683697872"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683697873",
+        "name": "Beechwood",
+        "name:en": "Beechwood",
+        "name:ga": "Bóthar Coill na Feá",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/beechwood.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.254678,
+          53.3208392
+        ]
+      },
+      "id": "node/4683697873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683697874",
+        "name": "Ranelagh",
+        "name:en": "Ranelagh",
+        "name:ga": "Raghnallach",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/ranelagh.html"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2562055,
+          53.3262726
+        ]
+      },
+      "id": "node/4683697874"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4683697875",
+        "name": "St. Stephen's Green",
+        "name:en": "St. Stephen's Green",
+        "name:ga": "Faiche Stiabhna",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/st-stephens-green.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2613595,
+          53.3390654
+        ]
+      },
+      "id": "node/4683697875"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4951245050",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.3753567,
+          53.2989256
+        ]
+      },
+      "id": "node/4951245050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5290694070",
+        "addr:street": "Broombridge Road",
+        "alt_name:en": "Broombridge Luas",
+        "alt_name:ga": "Luas Droichead Broome",
+        "name": "Broombridge",
+        "name:en": "Broombridge",
+        "name:ga": "Droichead Broome",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/broombridge.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2980835,
+          53.3723365
+        ]
+      },
+      "id": "node/5290694070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5298637240",
+        "addr:street": "Dominick Street Lower",
+        "name": "Dominick",
+        "name:ga": "Doiminic",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/dominick.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2657285,
+          53.3514157
+        ]
+      },
+      "id": "node/5298637240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5300294494",
+        "addr:street": "Broombridge Road",
+        "alt_name:en": "Broombridge Luas",
+        "alt_name:ga": "Luas Droichead Broome",
+        "name": "Broombridge",
+        "name:en": "Broombridge",
+        "name:ga": "Droichead Broome",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/broombridge.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2980963,
+          53.3723073
+        ]
+      },
+      "id": "node/5300294494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7176331796",
+        "addr:street": "Connaught Street",
+        "alt_name:en": "Cabra Luas",
+        "alt_name:ga": "Luas Cabrach",
+        "name": "Cabra",
+        "name:en": "Cabra",
+        "name:ga": "Cabrach",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/phibsborough.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2817747,
+          53.3641011
+        ]
+      },
+      "id": "node/7176331796"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7176331797",
+        "addr:street": "Cabra Road",
+        "alt_name:en": "Phibsborough Luas",
+        "alt_name:ga": "Luas Baile Phib",
+        "name": "Phibsborough",
+        "name:en": "Phibsborough",
+        "name:ga": "Baile Phib",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "passenger_information_display": "yes",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/phibsborough.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2789041,
+          53.3604282
+        ]
+      },
+      "id": "node/7176331797"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7176331798",
+        "name": "Dawson",
+        "name:ga": "Dásain",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/dawson.html",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2579465,
+          53.3420744
+        ]
+      },
+      "id": "node/7176331798"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8398652317",
+        "addr:street": "Constitution Hill",
+        "name": "Broadstone - DIT",
+        "name:ga": "An Chloch Leathan ITBhÁC",
+        "operator": "Luas - Transdev Dublin Light Rail Limited",
+        "public_transport": "stop_position",
+        "railway": "tram_stop",
+        "tram": "yes",
+        "website": "https://luas.ie/broadstone-dit.html",
+        "wheelchair": "yes",
+        "wikidata": "Q4972306"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.273777,
+          53.3540608
+        ]
+      },
+      "id": "node/8398652317"
+    }
+  ]
+}

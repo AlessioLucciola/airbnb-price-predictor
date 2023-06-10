@@ -1,0 +1,2808 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2023-05-10T15:34:39Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409208",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4356376,
+              55.7136765
+            ],
+            [
+              12.4353386,
+              55.7134147
+            ],
+            [
+              12.4352568,
+              55.7133407
+            ],
+            [
+              12.4352869,
+              55.7133297
+            ],
+            [
+              12.4356745,
+              55.7136644
+            ],
+            [
+              12.4356376,
+              55.7136765
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409208"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409209",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4355149,
+              55.7137215
+            ],
+            [
+              12.4351294,
+              55.7133868
+            ],
+            [
+              12.4351615,
+              55.7133755
+            ],
+            [
+              12.4352487,
+              55.7134472
+            ],
+            [
+              12.4355485,
+              55.713709
+            ],
+            [
+              12.4355149,
+              55.7137215
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409210",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4147164,
+              55.6977371
+            ],
+            [
+              12.4141773,
+              55.697363
+            ],
+            [
+              12.4142054,
+              55.6973486
+            ],
+            [
+              12.4143033,
+              55.6974148
+            ],
+            [
+              12.4146527,
+              55.6976577
+            ],
+            [
+              12.4147459,
+              55.6977254
+            ],
+            [
+              12.4147164,
+              55.6977371
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409210"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409211",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4148344,
+              55.6976842
+            ],
+            [
+              12.4147359,
+              55.6976188
+            ],
+            [
+              12.4143865,
+              55.6973762
+            ],
+            [
+              12.4142946,
+              55.6973074
+            ],
+            [
+              12.4143228,
+              55.6972961
+            ],
+            [
+              12.4143336,
+              55.6973036
+            ],
+            [
+              12.4148619,
+              55.6976717
+            ],
+            [
+              12.4148502,
+              55.697677
+            ],
+            [
+              12.4148344,
+              55.6976842
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409211"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409219",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4011049,
+              55.644052
+            ],
+            [
+              12.4010921,
+              55.643739
+            ],
+            [
+              12.4010921,
+              55.6436524
+            ],
+            [
+              12.4011277,
+              55.6436516
+            ],
+            [
+              12.4011424,
+              55.6440512
+            ],
+            [
+              12.4011049,
+              55.644052
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409219"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409220",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.400958,
+              55.6440527
+            ],
+            [
+              12.4009392,
+              55.6436542
+            ],
+            [
+              12.4009761,
+              55.6436539
+            ],
+            [
+              12.4009855,
+              55.6437394
+            ],
+            [
+              12.4009956,
+              55.6440523
+            ],
+            [
+              12.400958,
+              55.6440527
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409228",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.42776,
+              55.7062981
+            ],
+            [
+              12.4273865,
+              55.7059513
+            ],
+            [
+              12.4274549,
+              55.7059279
+            ],
+            [
+              12.4278284,
+              55.7062743
+            ],
+            [
+              12.42776,
+              55.7062981
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409228"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409229",
+        "area": "yes",
+        "construction:railway": "platform",
+        "layer": "1",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4404381,
+              55.7203019
+            ],
+            [
+              12.4403349,
+              55.7199945
+            ],
+            [
+              12.4403087,
+              55.7199091
+            ],
+            [
+              12.4403959,
+              55.7199008
+            ],
+            [
+              12.4404267,
+              55.719985
+            ],
+            [
+              12.440528,
+              55.7202928
+            ],
+            [
+              12.4404381,
+              55.7203019
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409229"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409230",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4414641,
+              55.723401
+            ],
+            [
+              12.4413688,
+              55.7230928
+            ],
+            [
+              12.4413487,
+              55.7230079
+            ],
+            [
+              12.4413823,
+              55.7230041
+            ],
+            [
+              12.441503,
+              55.7233976
+            ],
+            [
+              12.4414641,
+              55.723401
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409231",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4413165,
+              55.7234157
+            ],
+            [
+              12.4411979,
+              55.723023
+            ],
+            [
+              12.4412341,
+              55.7230185
+            ],
+            [
+              12.4412629,
+              55.7231019
+            ],
+            [
+              12.4413561,
+              55.723412
+            ],
+            [
+              12.4413165,
+              55.7234157
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409231"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409232",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4456383,
+              55.7302808
+            ],
+            [
+              12.4456671,
+              55.7302653
+            ],
+            [
+              12.446162,
+              55.7305477
+            ],
+            [
+              12.4461371,
+              55.7305621
+            ],
+            [
+              12.4460272,
+              55.7305028
+            ],
+            [
+              12.4456383,
+              55.7302808
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409233",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4455363,
+              55.7303385
+            ],
+            [
+              12.4455645,
+              55.7303238
+            ],
+            [
+              12.4459507,
+              55.7305451
+            ],
+            [
+              12.446056,
+              55.7306089
+            ],
+            [
+              12.4460299,
+              55.7306225
+            ],
+            [
+              12.4455363,
+              55.7303385
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409233"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409234",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4587174,
+              55.7345306
+            ],
+            [
+              12.4587328,
+              55.7345102
+            ],
+            [
+              12.4593658,
+              55.7346865
+            ],
+            [
+              12.4593521,
+              55.7347035
+            ],
+            [
+              12.4592129,
+              55.7346684
+            ],
+            [
+              12.4587174,
+              55.7345306
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409234"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1007409235",
+        "area": "yes",
+        "construction:railway": "platform",
+        "public_transport": "platform",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              12.4586523,
+              55.7346057
+            ],
+            [
+              12.4586684,
+              55.7345857
+            ],
+            [
+              12.459166,
+              55.734722
+            ],
+            [
+              12.4593001,
+              55.7347613
+            ],
+            [
+              12.4592853,
+              55.7347801
+            ],
+            [
+              12.4586523,
+              55.7346057
+            ]
+          ]
+        ]
+      },
+      "id": "way/1007409235"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/24954656",
+        "light_rail": "yes",
+        "name": "Rødovre",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Rdo",
+        "station": "light_rail",
+        "wikimedia_commons": "File:Rødovre Station og Rødovre Port.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4591846,
+          55.6648012
+        ]
+      },
+      "id": "node/24954656"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/24960728",
+        "light_rail": "yes",
+        "name": "Bispebjerg",
+        "network": "S-tog",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Bit",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5414024,
+          55.7062098
+        ]
+      },
+      "id": "node/24960728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/286885968",
+        "light_rail": "yes",
+        "name": "Avedøre",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Avø",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4555838,
+          55.6256622
+        ]
+      },
+      "id": "node/286885968"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/286886106",
+        "light_rail": "yes",
+        "name": "Friheden",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Frh",
+        "station": "light_rail",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.483656,
+          55.6294229
+        ]
+      },
+      "id": "node/286886106"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/286886137",
+        "light_rail": "yes",
+        "name": "Åmarken",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Åm",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q2796986"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4998659,
+          55.6397684
+        ]
+      },
+      "id": "node/286886137"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/286886199",
+        "light_rail": "yes",
+        "name": "Sjælør",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Sjæ",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5267123,
+          55.6515213
+        ]
+      },
+      "id": "node/286886199"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/286886246",
+        "light_rail": "yes",
+        "name": "Sydhavn",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Syv",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5376084,
+          55.6548839
+        ]
+      },
+      "id": "node/286886246"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/494382792",
+        "light_rail": "yes",
+        "name": "Herlev",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Her",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q2368951"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4435483,
+          55.7188384
+        ]
+      },
+      "id": "node/494382792"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/586436631",
+        "light_rail": "yes",
+        "name": "Islev",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Ist",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.469386,
+          55.6988768
+        ]
+      },
+      "id": "node/586436631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/586436651",
+        "light_rail": "yes",
+        "name": "Jyllingevej",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Jyt",
+        "station": "light_rail",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4779237,
+          55.6903652
+        ]
+      },
+      "id": "node/586436651"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/587660892",
+        "light_rail": "yes",
+        "name": "Skovlunde",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Sko",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4027132,
+          55.7230635
+        ]
+      },
+      "id": "node/587660892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/593753668",
+        "light_rail": "yes",
+        "name": "Vesterport",
+        "network": "S-tog",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Vpt",
+        "station": "light_rail",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.56241,
+          55.675817
+        ]
+      },
+      "id": "node/593753668"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/593765406",
+        "light_rail": "yes",
+        "name": "Dybbølsbro",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Dbt",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5595897,
+          55.6650983
+        ]
+      },
+      "id": "node/593765406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/593869905",
+        "light_rail": "yes",
+        "name": "Ryparken",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Ryt",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5596915,
+          55.7154843
+        ]
+      },
+      "id": "node/593869905"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/595293336",
+        "light_rail": "yes",
+        "name": "Svanemøllen",
+        "operator": "DSB",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Sam",
+        "start_date": "1934",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q1810737"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5788253,
+          55.7155342
+        ]
+      },
+      "id": "node/595293336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/595296652",
+        "light_rail": "yes",
+        "name": "Nordhavn",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Nht",
+        "station": "light_rail",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5910118,
+          55.7049718
+        ]
+      },
+      "id": "node/595296652"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/597730022",
+        "light_rail": "yes",
+        "name": "Dyssegård",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Dyt",
+        "station": "light_rail",
+        "wikidata": "Q2615777"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5360326,
+          55.7323761
+        ]
+      },
+      "id": "node/597730022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/598201521",
+        "light_rail": "yes",
+        "name": "Hellerup",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Hl",
+        "station": "light_rail",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q3248474"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.566911,
+          55.7305908
+        ]
+      },
+      "id": "node/598201521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/610619173",
+        "layer": "1",
+        "light_rail": "yes",
+        "name": "Nørrebro",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Nø",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5378036,
+          55.7006813
+        ]
+      },
+      "id": "node/610619173"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/611297799",
+        "light_rail": "yes",
+        "name": "Fuglebakken",
+        "network": "S-tog",
+        "operator": "DSB S-tog",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Fut",
+        "station": "light_rail",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5266803,
+          55.6953074
+        ]
+      },
+      "id": "node/611297799"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/611305003",
+        "light_rail": "yes",
+        "name": "Flintholm",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Fl",
+        "station": "light_rail",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4988664,
+          55.6855434
+        ]
+      },
+      "id": "node/611305003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/611305065",
+        "light_rail": "yes",
+        "name": "Grøndal",
+        "network": "S-tog",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Ght",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5153054,
+          55.6905327
+        ]
+      },
+      "id": "node/611305065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/611318182",
+        "light_rail": "yes",
+        "name": "Danshøj",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Dah",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4937549,
+          55.6643892
+        ]
+      },
+      "id": "node/611318182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/611318209",
+        "light_rail": "yes",
+        "name": "Ålholm",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Ålm",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4931707,
+          55.6720657
+        ]
+      },
+      "id": "node/611318209"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/611318230",
+        "light_rail": "yes",
+        "name": "KB Hallen",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Kbn",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4923389,
+          55.6778138
+        ]
+      },
+      "id": "node/611318230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/611325250",
+        "light_rail": "yes",
+        "name": "Vigerslev Allé",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Vgt",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4990504,
+          55.6597688
+        ]
+      },
+      "id": "node/611325250"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/659992474",
+        "light_rail": "yes",
+        "name": "Emdrup",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Emt",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5410549,
+          55.7207286
+        ]
+      },
+      "id": "node/659992474"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1017968484",
+        "light_rail": "yes",
+        "name": "Ny Ellebjerg",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Nel",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5140092,
+          55.6537439
+        ]
+      },
+      "id": "node/1017968484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1023040928",
+        "light_rail": "yes",
+        "name": "Brøndbyøster",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Bøt",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4410201,
+          55.6650504
+        ]
+      },
+      "id": "node/1023040928"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1036553605",
+        "alt_name": "Hvidovre Nær",
+        "light_rail": "yes",
+        "name": "Hvidovre",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Hit",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4750154,
+          55.6644909
+        ]
+      },
+      "id": "node/1036553605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1036553606",
+        "light_rail": "yes",
+        "name": "Langgade",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Vat",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5040869,
+          55.6673952
+        ]
+      },
+      "id": "node/1036553606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1040169361",
+        "light_rail": "yes",
+        "name": "Peter Bangsvej",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Pbt",
+        "station": "light_rail"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5036407,
+          55.6780325
+        ]
+      },
+      "id": "node/1040169361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1271230723",
+        "name": "Lindevang",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q801103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5131859,
+          55.6834487
+        ]
+      },
+      "id": "node/1271230723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1724493427",
+        "name": "Frederiksberg Allé",
+        "network": "Metro",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "station": "subway",
+        "subway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5405342,
+          55.6734871
+        ]
+      },
+      "id": "node/1724493427"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1724493428",
+        "name": "Frederiksberg Allé",
+        "network": "Metro",
+        "public_transport": "stop_position",
+        "railway": "stop",
+        "station": "subway",
+        "subway": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.540686,
+          55.6735288
+        ]
+      },
+      "id": "node/1724493428"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1742785276",
+        "alt_name": "Københavns Lufthavn, Kastup",
+        "alt_name:en": "Copenhagen Airport, Kastrup",
+        "check_date:alt_name": "2020-09-15",
+        "check_date:name": "2020-09-15",
+        "name": "Lufthavnen (Metro)",
+        "name:en": "The Airport",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6492236,
+          55.6309113
+        ]
+      },
+      "id": "node/1742785276"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2089115303",
+        "name": "Ørestad",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.579355,
+          55.6290128
+        ]
+      },
+      "id": "node/2089115303"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2705309629",
+        "layer": "1",
+        "name": "Femøren",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q800748"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.638338,
+          55.6451882
+        ]
+      },
+      "id": "node/2705309629"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2705309632",
+        "layer": "1",
+        "name": "Amager Strand",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q800380"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6318585,
+          55.6561353
+        ]
+      },
+      "id": "node/2705309632"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2705309633",
+        "layer": "1",
+        "name": "Kastrup",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6469508,
+          55.6357222
+        ]
+      },
+      "id": "node/2705309633"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2705324067",
+        "layer": "1",
+        "name": "Bella Center",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q800463"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.582926,
+          55.6380729
+        ]
+      },
+      "id": "node/2705324067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2705324072",
+        "name": "Øresund",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q801686"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6287182,
+          55.6614401
+        ]
+      },
+      "id": "node/2705324072"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2705324074",
+        "layer": "1",
+        "name": "DR Byen",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5890175,
+          55.6557682
+        ]
+      },
+      "id": "node/2705324074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2705324076",
+        "layer": "1",
+        "name": "Sundby",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q801498"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5857172,
+          55.6452516
+        ]
+      },
+      "id": "node/2705324076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2705324077",
+        "layer": "-1",
+        "name": "Islands Brygge",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5852113,
+          55.6634112
+        ]
+      },
+      "id": "node/2705324077"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4280112495",
+        "light_rail": "yes",
+        "name": "Carlsberg",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Cb",
+        "ref": "8600631",
+        "ref_name": "Carlsberg St.",
+        "start_date": "2016-07-03",
+        "station": "light_rail",
+        "toilets:wheelchair": "no",
+        "wikidata": "Q16856290",
+        "wikipedia": "da:Carlsberg Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5361547,
+          55.6634508
+        ]
+      },
+      "id": "node/4280112495"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4989664667",
+        "light_rail": "yes",
+        "name": "Østerport",
+        "network": "S-tog",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Kk",
+        "station": "light_rail",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5883611,
+          55.693346
+        ]
+      },
+      "id": "node/4989664667"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4993155222",
+        "light_rail": "yes",
+        "name": "Nørreport",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Kn",
+        "ref": "8600646",
+        "ref_name": "Nørreport St.",
+        "start_date": "1918",
+        "station": "light_rail",
+        "wheelchair": "yes",
+        "wikidata": "Q801282",
+        "wikipedia": "da:Nørreport Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5717693,
+          55.6834327
+        ]
+      },
+      "id": "node/4993155222"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5066122139",
+        "name": "Vanløse",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4925009,
+          55.6871452
+        ]
+      },
+      "id": "node/5066122139"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5066122140",
+        "light_rail": "yes",
+        "name": "Vanløse",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Van",
+        "station": "light_rail",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4915039,
+          55.6871724
+        ]
+      },
+      "id": "node/5066122140"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5072901609",
+        "name": "Flintholm",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4994896,
+          55.6858744
+        ]
+      },
+      "id": "node/5072901609"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5073252188",
+        "light_rail": "yes",
+        "name": "Valby",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Val",
+        "station": "light_rail",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5135924,
+          55.6637755
+        ]
+      },
+      "id": "node/5073252188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5096749954",
+        "light_rail": "yes",
+        "loc_name": "Hovedbanen",
+        "name": "Københavns Hovedbanegård",
+        "name:da": "Københavns Hovedbanegård",
+        "name:de": "Kopenhagen Hbf",
+        "name:en": "Copenhagen Central Station",
+        "name:fi": "Kööpenhaminan päärautatieasema",
+        "name:fr": "Gare centrale de Copenhague",
+        "name:ja": "コペンハーゲン中央",
+        "name:ko": "코펜하겐 중앙역",
+        "official_name": "Københavns Hovedbanegård",
+        "public_transport": "station",
+        "railway": "station",
+        "railway:ref": "Kh",
+        "reg_name": "Hovedbanegården",
+        "short_name": "København H",
+        "station": "light_rail",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.564607,
+          55.6721858
+        ]
+      },
+      "id": "node/5096749954"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5126423536",
+        "light_rail": "yes",
+        "name": "Husum",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Hut",
+        "station": "light_rail",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4631515,
+          55.710287
+        ]
+      },
+      "id": "node/5126423536"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5715956175",
+        "name": "Lergravsparken",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q801094"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6170475,
+          55.662236
+        ]
+      },
+      "id": "node/5715956175"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5715956176",
+        "name": "Amagerbro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q800382"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.6028945,
+          55.6633965
+        ]
+      },
+      "id": "node/5715956176"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5715956177",
+        "name": "Christianshavn",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q587485"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5913771,
+          55.6720958
+        ]
+      },
+      "id": "node/5715956177"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5715956178",
+        "name": "Kongens Nytorv",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q801029",
+        "wikipedia": "da:Kongens Nytorv Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5850827,
+          55.6796344
+        ]
+      },
+      "id": "node/5715956178"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5715956180",
+        "level": "-2",
+        "name": "Forum",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q800764"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5525408,
+          55.6818073
+        ]
+      },
+      "id": "node/5715956180"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5715956181",
+        "name": "Frederiksberg",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5322237,
+          55.6811699
+        ]
+      },
+      "id": "node/5715956181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5715956182",
+        "name": "Fasanvej",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q800749"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5235687,
+          55.6815945
+        ]
+      },
+      "id": "node/5715956182"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5974664508",
+        "construction": "yes",
+        "layer": "-2",
+        "name": "Mozarts Plads",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q61060497"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5343368,
+          55.6489712
+        ]
+      },
+      "id": "node/5974664508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5974664509",
+        "construction": "station",
+        "layer": "-2",
+        "name": "Sluseholmen",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q61060509"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5444254,
+          55.6458406
+        ]
+      },
+      "id": "node/5974664509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5974664510",
+        "construction": "station",
+        "layer": "-2",
+        "name": "Enghave Brygge",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wikidata": "Q61060512"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5562468,
+          55.653827
+        ]
+      },
+      "id": "node/5974664510"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5974664511",
+        "construction": "station",
+        "layer": "-2",
+        "name": "Havneholmen",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q61060539"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5593142,
+          55.6609865
+        ]
+      },
+      "id": "node/5974664511"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5974664512",
+        "name": "Ny Ellebjerg",
+        "name:da": "Ny Ellebjerg",
+        "name:de": "Ny Ellebjerg",
+        "name:en": "Ny Ellebjerg",
+        "name:fi": "Ny Ellebjerg",
+        "name:fr": "Ny Ellebjerg",
+        "network": "Metro",
+        "official_name": "København Syd",
+        "public_transport": "station",
+        "railway": "station",
+        "reg_name": "København Syd",
+        "short_name": "København S",
+        "station": "subway",
+        "subway": "yes",
+        "train": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5159978,
+          55.6529502
+        ]
+      },
+      "id": "node/5974664512"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6041192146",
+        "layer": "1",
+        "name": "Orientkaj",
+        "network": "metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q17165662"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5951777,
+          55.7118379
+        ]
+      },
+      "id": "node/6041192146"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836386876",
+        "loc_name": "Hovedbanen",
+        "name": "Københavns Hovedbanegård",
+        "name:da": "Københavns Hovedbanegård",
+        "name:de": "Kopenhagen Hbf",
+        "name:en": "Copenhagen Central Station",
+        "name:fi": "Kööpenhaminan päärautatieasema",
+        "name:fr": "Gare centrale de Copenhague",
+        "name:ja": "コペンハーゲン中央",
+        "name:ko": "코펜하겐 중앙역",
+        "network": "Metro",
+        "official_name": "Københavns Hovedbanegård",
+        "public_transport": "station",
+        "railway": "station",
+        "reg_name": "Hovedbanegården",
+        "short_name": "København H",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5638753,
+          55.6714003
+        ]
+      },
+      "id": "node/6836386876"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836386877",
+        "name": "Rådhuspladsen",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q11998805"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5682006,
+          55.6764406
+        ]
+      },
+      "id": "node/6836386877"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836386878",
+        "name": "Nørreport",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "halt",
+        "ref": "8603307",
+        "ref_name": "Nørreport St. (Metro)",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q3432954",
+        "wikipedia": "da:Nørreport (København)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5712413,
+          55.6838
+        ]
+      },
+      "id": "node/6836386878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836386879",
+        "name": "Gammel Strand",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q11971512"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5789275,
+          55.6775945
+        ]
+      },
+      "id": "node/6836386879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836434801",
+        "layer": "-2",
+        "name": "Enghave Plads",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q11967561"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5467948,
+          55.667227
+        ]
+      },
+      "id": "node/6836434801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836434802",
+        "name": "Frederiksberg Allé",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q11970037"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5406118,
+          55.6735083
+        ]
+      },
+      "id": "node/6836434802"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836446142",
+        "layer": "-2",
+        "name": "Nørrebros Runddel",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q11992956"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5489348,
+          55.693528
+        ]
+      },
+      "id": "node/6836446142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836446143",
+        "layer": "-2",
+        "name": "Nørrebro",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5379713,
+          55.7000485
+        ]
+      },
+      "id": "node/6836446143"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836446144",
+        "name": "Aksel Møllers Have",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q11957158"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5329471,
+          55.6860507
+        ]
+      },
+      "id": "node/6836446144"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836446145",
+        "name": "Nuuks Plads",
+        "network": "Metro",
+        "operator": "Metroselskabet I/S",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q11992758"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5425294,
+          55.6884779
+        ]
+      },
+      "id": "node/6836446145"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836466111",
+        "layer": "-2",
+        "name": "Skjolds Plads",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q12001069"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5487689,
+          55.7034992
+        ]
+      },
+      "id": "node/6836466111"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836624243",
+        "layer": "-2",
+        "name": "Vibenhus Runddel",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5647764,
+          55.7063956
+        ]
+      },
+      "id": "node/6836624243"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836648163",
+        "name": "Østerport",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5859236,
+          55.692878
+        ]
+      },
+      "id": "node/6836648163"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836648164",
+        "name": "Marmorkirken",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q11988456"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5890307,
+          55.6851258
+        ]
+      },
+      "id": "node/6836648164"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836652392",
+        "name": "Trianglen",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q12007414"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.575555,
+          55.6992513
+        ]
+      },
+      "id": "node/6836652392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836652393",
+        "layer": "-2",
+        "name": "Poul Henningsens Plads",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q11996138"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5761362,
+          55.7094751
+        ]
+      },
+      "id": "node/6836652393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7339730678",
+        "name": "Nordhavn",
+        "network": "Metro",
+        "public_transport": "station",
+        "railway": "station",
+        "station": "subway",
+        "subway": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5915656,
+          55.7074271
+        ]
+      },
+      "id": "node/7339730678"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7891926537",
+        "name": "Nørreport",
+        "public_transport": "station",
+        "railway": "halt",
+        "railway:ref": "Kn",
+        "ref": "8600646",
+        "ref_name": "Nørreport St.",
+        "start_date": "1918",
+        "station": "train",
+        "train": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q801282",
+        "wikipedia": "da:Nørreport Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.5727632,
+          55.6838484
+        ]
+      },
+      "id": "node/7891926537"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293930373",
+        "construction:railway": "stop",
+        "name": "Herlev Syd",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4353755,
+          55.7135356
+        ]
+      },
+      "id": "node/9293930373"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293930374",
+        "construction:railway": "stop",
+        "name": "Herlev Syd",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4354291,
+          55.713516
+        ]
+      },
+      "id": "node/9293930374"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293930388",
+        "construction:railway": "stop",
+        "name": "Glostrup Ejby",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4144945,
+          55.6975274
+        ]
+      },
+      "id": "node/9293930388"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293930389",
+        "construction:railway": "stop",
+        "name": "Glostrup Ejby",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4145434,
+          55.6975043
+        ]
+      },
+      "id": "node/9293930389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293962646",
+        "construction:railway": "stop",
+        "name": "Brøndbyvester",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.401009,
+          55.6438518
+        ]
+      },
+      "id": "node/9293962646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293962647",
+        "construction:railway": "stop",
+        "name": "Brøndbyvester",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.401074,
+          55.6438518
+        ]
+      },
+      "id": "node/9293962647"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293962705",
+        "construction:railway": "stop",
+        "name": "Rødovre Nord",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4276607,
+          55.7060964
+        ]
+      },
+      "id": "node/9293962705"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293962706",
+        "construction:railway": "stop",
+        "name": "Rødovre Nord",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4275541,
+          55.7061323
+        ]
+      },
+      "id": "node/9293962706"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293962757",
+        "construction:railway": "stop",
+        "name": "Herlev Bymidte",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4413829,
+          55.7232035
+        ]
+      },
+      "id": "node/9293962757"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293962758",
+        "construction:railway": "stop",
+        "name": "Herlev Bymidte",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4413186,
+          55.7232099
+        ]
+      },
+      "id": "node/9293962758"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293962834",
+        "construction:railway": "stop",
+        "name": "Herlev Hospital",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4458247,
+          55.7304556
+        ]
+      },
+      "id": "node/9293962834"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293962835",
+        "construction:railway": "stop",
+        "name": "Herlev Hospital",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4458729,
+          55.730431
+        ]
+      },
+      "id": "node/9293962835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293962878",
+        "construction:railway": "stop",
+        "name": "Dynamovej",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.458999,
+          55.7346627
+        ]
+      },
+      "id": "node/9293962878"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293962879",
+        "construction:railway": "stop",
+        "name": "Dynamovej",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4590252,
+          55.7346291
+        ]
+      },
+      "id": "node/9293962879"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293963778",
+        "construction:railway": "stop",
+        "name": "Herlev",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4404984,
+          55.7201285
+        ]
+      },
+      "id": "node/9293963778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9293963781",
+        "construction:railway": "stop",
+        "name": "Herlev",
+        "public_transport": "stop_position",
+        "railway": "construction",
+        "tram": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4403611,
+          55.7201411
+        ]
+      },
+      "id": "node/9293963781"
+    }
+  ]
+}
