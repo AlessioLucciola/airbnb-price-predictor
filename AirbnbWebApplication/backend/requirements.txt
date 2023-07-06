@@ -7,5 +7,5 @@ mysql-connector-python>=8.0.31
 sqlparse>=0.4.3
 django-cors-headers
 numpy==1.23.5
-pyspark>=3.4.0
+pyspark==3.3.2
 pandas>=2.0.1

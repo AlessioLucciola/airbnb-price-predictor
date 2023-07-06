@@ -1,8 +1,11 @@
-FROM python:3.9.6
-ENV PYTHONUNBUFFERED 1
-ENV JAVA_HOME C:/Program Files/Java/jdk-17
+FROM python:3.9
+
+# Install Java
+RUN apt-get update && apt-get install -y ca-certificates-java
+RUN apt-get install -y openjdk-17-jdk
+
 WORKDIR /app
-COPY requirements.txt /app/requirements.txt
-RUN pip install -r requirements.txt
+COPY ./requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 COPY . /app
 RUN python manage.py migrate

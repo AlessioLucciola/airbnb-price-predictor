@@ -1,11 +1,10 @@
 import pyspark
 from pyspark.ml.regression import GBTRegressionModel
 from pyspark.ml.linalg import Vectors
-from pyspark.ml.feature import VectorAssembler
 from pyspark.sql import *
 from pyspark.sql.types import *
 from pyspark.sql.functions import *
-from pyspark import SparkContext, SparkConf
+from pyspark import SparkConf
 from airbnb.paths import MODELS_ROOT
 import os
 
@@ -25,7 +24,6 @@ class Models():
                 set('spark.executor.memory', '4G').\
                 set('spark.driver.memory', '45G').\
                 set('spark.driver.maxResultSize', '10G').\
-                set('spark.executor.extraJavaOptions', '-XX:+UseG1GC').\
                 setAppName('Airbnb Price Prediction').\
                 setMaster('local[*]')
 

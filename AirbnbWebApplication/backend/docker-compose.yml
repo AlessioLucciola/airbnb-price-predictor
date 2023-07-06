@@ -1,4 +1,4 @@
-version: "3.9"
+version: 2.18.1
 services:
     db:
       image: mysql
@@ -28,10 +28,14 @@ services:
         context: .
         dockerfile: Dockerfile
       command: 'python manage.py runserver 0.0.0.0:8000'
+      environment:
+          JAVA_HOME: /usr/lib/jvm/java-17-openjdk-arm64
       ports:
         - 8000:8000
       expose:
         - 8000
+      volumes:
+        - /app
       depends_on:
         - db
 
