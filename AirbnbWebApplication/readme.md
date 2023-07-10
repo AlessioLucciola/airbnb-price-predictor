@@ -19,7 +19,7 @@ docker exec -i mysql mysql -uadmin -padmin db_airbnb < airbnb.sql
 ```
 This will copy the database to the mysql container. Note that in Windows you might need to execute this command instead:
 ```sh
-Cmd /c “docker exec -i mysql mysql -uadmin -padmin db_airbnb < airbnb.sql”
+cmd /c “docker exec -i mysql mysql -uadmin -padmin db_airbnb < airbnb.sql”
 ```
 
 In order to run the frontend, you should have <strong>Node.js</strong> installed. Just go to the "AirbnbWebApplication/frontend" folder and execute:
