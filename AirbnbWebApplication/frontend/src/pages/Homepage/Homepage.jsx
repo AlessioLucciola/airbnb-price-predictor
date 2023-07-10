@@ -19,14 +19,13 @@ function Homepage() {
     const getAirbnbList = () => {
       axios.get('http://localhost:8000/api/get-airbnb')
       .then(function(response) {
-        if (response.status === 200) {
+        if (response.status === 200 && response.data.data.length !== 0) {
           const data = JSON.parse(response.data.data);
-          console.log(data)
           setAirbnbList(data);
         }})
-        .catch(function(error) {
-            setPopup({'trigger': true, 'title': 'Error!', 'description': 'An error occurred while getting the list of Airbnb!'});
-        })
+      .catch(function(error) {
+          setPopup({'trigger': true, 'title': 'Error!', 'description': 'An error occurred while getting the list of Airbnb!'});
+      })
     }
 
     const closePopup = () => {

@@ -88,7 +88,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "airbnb.wsgi.application"
 
-
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
@@ -98,7 +97,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     },
     'mysql': {
-        'DB_HOST': 'localhost',
+        'DB_HOST': 'mysql',
         'DB_USERNAME': 'admin',
         'DB_PASSWORD': 'admin',
         'DB_NAME': 'db_airbnb'

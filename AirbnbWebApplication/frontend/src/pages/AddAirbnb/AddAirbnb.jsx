@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import './AddAirbnb.scss';
 import { Popup } from '../../components';
-import { accommodationValues, hostInfo } from '../../constants';
+import { accommodationValues, hostInfo, amenities, room_type, cities, inputs } from '../../constants';
 
 function AddAirbnb() {
   const [formValues, setFormValues] = useState({ name: '', address: '', house_number: '', children_friendly: 0, pet_friendly: 0, has_tv: 0, has_bathtub: 0, has_self_checkin: 0, has_private_entrance: 0, has_security_devices: 0, has_laundry: 0, has_patio: 0, has_paid_parking: 0, has_fireplace: 0, is_long_term_stays_allowed: 0, has_city_skyline_view: 0, is_smoking_allowed: 0, has_free_parking: 0, has_heating_cooling_systems: 0, has_elevator: 0, has_cooking_basics: 0, has_internet: 0, has_breakfast: 0, host_greets_you: 0, accommodates: '', beds: '', bedrooms: '', n_bathrooms: '', is_bathroom_shared: 0, availability_365: '', property_type: '', room_type: '', latitude: '', longitude: '', instant_bookable: 0, city: '', price: '', minimum_nights: ''});
@@ -14,228 +14,6 @@ function AddAirbnb() {
   const [detailPage, setDetailPage] = useState(false);
 
   const navigate = useNavigate();
-
-  const inputs = {
-    name: {
-      id: 'i1',
-      name: 'name',
-      type: 'text',
-      placeholder: 'Name of the Airbnb',
-      label: 'name',
-      required: true,
-    },
-    address: {
-      id: 'i2_1',
-      name: 'address',
-      type: 'text',
-      placeholder: 'Address',
-      label: 'address',
-      required: true,
-    },
-    house_number: {
-      id: 'i2_2',
-      name: 'house_number',
-      type: 'string',
-      placeholder: 'House number',
-      label: 'house_number',
-      required: true,
-    },
-    accommodates: {
-      id: 'i3',
-      name: 'accommodates',
-      type: 'number',
-      placeholder: 'Number of accommodates',
-      label: 'accommodates',
-      required: true,
-      min: 0
-    },
-    beds: {
-      id: 'i4',
-      name: 'beds',
-      type: 'number',
-      placeholder: 'Number of beds',
-      label: 'beds',
-      required: true,
-      min: 0
-    },
-    bedrooms: {
-      id: 'i5',
-      name: 'bedrooms',
-      type: 'number',
-      placeholder: 'Number of bedrooms',
-      label: 'bedrooms',
-      required: true,
-      min: 0
-    },
-    n_bathrooms: {
-      id: 'i6',
-      name: 'n_bathrooms',
-      type: 'number',
-      placeholder: 'Number of bathrooms',
-      label: 'n_bathrooms',
-      required: true,
-      min: 0
-    },
-    availability_365: {
-      id: 'i7',
-      name: 'availability_365',
-      type: 'text',
-      placeholder: 'Number of days your Airbnb is available (in a year)',
-      label: 'availability_365',
-      required: true,
-      min: 0,
-      max: 365
-    },
-    latitude: {
-      id: 'i8',
-      name: 'latitude',
-      type: 'number',
-      step:'any',
-      placeholder: 'Latitude',
-      label: 'latitude',
-      required: true,
-    },
-    longitude: {
-      id: 'i9',
-      name: 'longitude',
-      step:'any',
-      type: 'number',
-      placeholder: 'Longitude',
-      label: 'longitude',
-      required: true,
-    },
-    price: {
-      id: 'i10',
-      name: 'price',
-      step:'any',
-      type: 'number',
-      placeholder: 'Price',
-      label: 'price',
-      required: true,
-      min: 0
-    },
-    minimum_nights: {
-      id: 'i11',
-      name: 'minimum_nights',
-      type: 'number',
-      placeholder: 'Minimum nights',
-      label: 'minimum_nights',
-      required: true,
-      min: 1
-    }
-  }
-
-  const amenities = [
-    {
-      name: 'children_friendly',
-      label: 'Children friendly'
-    },
-    {
-      name: 'pet_friendly',
-      label: 'Pet friendly'
-    },
-    {
-      name: 'has_tv',
-      label: 'Has tv'
-    },
-    {
-      name: 'has_bathtub',
-      label: 'Has bathtub'
-    },
-    {
-      name: 'has_self_checkin',
-      label: 'Has self-checkin'
-    },
-    {
-      name: 'has_private_entrance',
-      label: 'Has private entrance'
-    },
-    {
-      name: 'has_security_devices',
-      label: 'Has security devices'
-    },
-    {
-      name: 'has_laundry',
-      label: 'Has laundry'
-    },
-    {
-      name: 'has_patio',
-      label: 'Has patio'
-    },
-    {
-      name: 'has_paid_parking',
-      label: 'Paid parking nearby'
-    },
-    {
-      name: 'has_fireplace',
-      label: 'Has fireplace'
-    },
-    {
-      name: 'is_long_term_stays_allowed',
-      label: 'Long term stays allowed'
-    },
-    {
-      name: 'has_city_skyline_view',
-      label: 'Has city skylines view'
-    },
-    {
-      name: 'is_smoking_allowed',
-      label: 'Smocking allowed'
-    },
-    {
-      name: 'has_free_parking',
-      label: 'Free parking nearby'
-    },
-    {
-      name: 'has_heating_cooling_systems',
-      label: 'Has heating-cooling systems'
-    },
-    {
-      name: 'has_elevator',
-      label: 'Has elevator'
-    },
-    {
-      name: 'has_cooking_basics',
-      label: 'Has cooking basics'
-    },
-    {
-      name: 'has_internet',
-      label: 'Has internet'
-    },
-    {
-      name: 'has_breakfast',
-      label: 'Has breakfast'
-    },
-    {
-      name: 'host_greets_you',
-      label: 'Host greets you'
-    }
-  ]
-
-  const cities = [
-    'Amsterdam',
-    'Athens',
-    'Barcelona',
-    'Berlin',
-    'Brussels',
-    'Dublin',
-    'Lisboa',
-    'London',
-    'Lyon',
-    'Madrid',
-    'Milan',
-    'Munich',
-    'Paris',
-    'Rome',
-    'Vienna'
-  ]
-
-  const room_type = [
-    'Shared room',
-    'Hotel room',
-    'Entire home/apt',
-    'Private room'
-  ]
 
   useEffect(() => {
     if (formValues.address !== '' && formValues.city !== '' && formValues.house_number !== '' && (formValues.latitude === '' && formValues.longitude === '')) {
@@ -296,6 +74,7 @@ function AddAirbnb() {
     formData.append('longitude', formValues['longitude']);
     formData.append('instant_bookable', formValues['instant_bookable']);
     formData.append('city', formValues['city']);
+    formData.append('minimum_nights', formValues['minimum_nights']);
     formData.append('is_work_email_verified', hostInfo.is_work_email_verified);
     formData.append('host_identity_verified', hostInfo.host_identity_verified);
     formData.append('host_is_superhost', hostInfo.host_is_superhost);
@@ -310,7 +89,6 @@ function AddAirbnb() {
     formData.append('review_scores_cleanliness', accommodationValues.review_scores_cleanliness);
     formData.append('review_scores_rating', accommodationValues.review_scores_rating);
     formData.append('review_scores_location', accommodationValues.review_scores_location);
-    formData.append('minimum_nights', formValues.minimum_nights);
     
     axios.post("http://localhost:8000/api/generate-prediction", formData)
     .then(function (response) {
@@ -321,7 +99,7 @@ function AddAirbnb() {
       }
     })
     .catch(function (error) {
-      setPopup({ trigger: true, title: "An error occurred!", description: '' })
+      setPopup({ trigger: true, title: "An error occurred!", description: error.response })
     })
     
     setLoading(false)
@@ -367,6 +145,9 @@ function AddAirbnb() {
     formData.append('longitude', formValues['longitude']);
     formData.append('instant_bookable', formValues['instant_bookable']);
     formData.append('city', formValues['city']);
+    formData.append('price', formValues['price']);
+    formData.append('house_number', formValues['house_number']);
+    formData.append('minimum_nights', formValues['minimum_nights']);
     formData.append('is_work_email_verified', hostInfo.is_work_email_verified);
     formData.append('host_identity_verified', hostInfo.host_identity_verified);
     formData.append('host_is_superhost', hostInfo.host_is_superhost);
@@ -377,9 +158,6 @@ function AddAirbnb() {
     formData.append('review_scores_communication', accommodationValues.review_scores_communication);
     formData.append('number_of_reviews', accommodationValues.number_of_reviews);
     formData.append('review_scores_cleanliness', accommodationValues.review_scores_cleanliness);
-    formData.append('price', formValues.price);
-    formData.append('house_number', formValues.house_number);
-    formData.append('minimum_nights', formValues.minimum_nights);
     
     axios.post("http://localhost:8000/api/add-airbnb", formData)
     .then(function (response) {

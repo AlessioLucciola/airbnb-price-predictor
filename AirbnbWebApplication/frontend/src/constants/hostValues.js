@@ -1,3 +1,4 @@
+//These values are used in the price prediction and should be retrieved from the backend (users feature not implemented for simplicity)
 const hostInfo = {
     is_work_email_verified: 0,
     host_identity_verified: 1,
