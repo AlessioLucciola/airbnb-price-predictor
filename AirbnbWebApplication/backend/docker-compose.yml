@@ -29,7 +29,7 @@ services:
         dockerfile: Dockerfile
       command: 'python manage.py runserver 0.0.0.0:8000'
       environment:
-          JAVA_HOME: /usr/lib/jvm/java-17-openjdk-arm64
+          JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
       ports:
         - 8000:8000
       expose:
