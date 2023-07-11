@@ -20,11 +20,7 @@ The folder structure is the following:
 - `Models`: Contains the models trained with Spark.
 
 ## Web Application Demo
-<iframe width="560" height="315"
-src="https://www.youtube.com/watch?v=CLMlq0RHy-0" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+https://github.com/AlessioLucciola/airbnb-price-predictor/assets/80223097/b9ef802a-2bb3-44ec-a5b7-3044dacdba67
 
 ## Technologies Used
 Python • PySpark • Django • Javascript • React • SCSS • MySQL • Docker
